@@ -1,7 +1,7 @@
 {
-  "name": "advanced-tooltip",
+  "name": "team-member",
   "version": "0.0.1",
-  "description": "React Advanced Tooltip Components",
+  "description": "React Advanced Image Components",
   "files": [
     "./lib/"
   ],
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NafisMahmudAyon/advanced-tooltip.git"
+    "url": "git+https://github.com/NafisMahmudAyon/team-member.git"
   },
   "keywords": [
     "ui",
@@ -52,22 +52,27 @@
   "author": "Nafis Mahmud Ayon <nafismahmudayon@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NafisMahmudAyon/advanced-tooltip/issues"
+    "url": "https://github.com/NafisMahmudAyon/team-member/issues"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.2",
+    "blog-x-ui": "^0.0.8",
+    "framer-motion": "^11.3.30",
+    "landing-page-ui": "^2.1.49",
+    "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.4"
+    "typofx": "^0.0.2"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "css-minify": "^2.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "typescript": "^5"
   }
 }
