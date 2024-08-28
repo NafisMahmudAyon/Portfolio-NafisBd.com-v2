@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
+import { oswald } from "./fonts";
 
-const poppins = Poppins({ weight: ['400', '500', '600'], subsets: ["latin"], display: 'swap' });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-[f1f6fb] dark:bg-[#262626]`}>{children}</body>
+      <body className={` ${oswald.className} bg-[#f1f6fb] dark:bg-[#262626]`}>{children}</body>
     </html>
   );
 }

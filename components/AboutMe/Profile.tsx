@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import ProfilePic from '../../public/profilePic.png'
+import { FacebookIcon, GithubIcon, LinkedInIcon, TelegramIcon, TwitterIcon, WhatsAppIcon } from '../Icons'
 
 const Profile = () => {
   const spring = {
@@ -29,15 +30,22 @@ const Profile = () => {
           priority
         />
       </motion.div>
-      <motion.div className='absolute -bottom-10 left-1/2 -translate-x-1/2 backdrop-blur-xl w-[260px] text-center bg-primaryColor bg-opacity-10 px-4 py-2 flex items-center justify-center flex-col rounded-lg border border-primaryColor ' initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ...spring, delay: 0.2 }}
+      <motion.div className='absolute -bottom-10 left-1/2 backdrop-blur-xl w-[260px] text-center bg-primaryColor bg-opacity-10 px-4 py-2 flex items-center justify-center flex-col rounded-lg border border-primaryColor '
+        initial={{ x: -300, opacity: 0 }} 
+        animate={{ x: "-50%", opacity: 1 }} 
+        transition={{ ...spring, delay: 0.2 }}
         whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}>
-      <span className='text-headingText dark:text-headingDarkText'>Nafis Mahmud Ayon</span>
-      <ul className='flex gap-2'><li>fb</li>
-      <li>tw</li>
-      <li>ln</li>
-      <li>git</li>
-      <li>te</li></ul>
+        // whileTap={{ scale: 0.95 }}
+        >
+        <span className='text-headingText dark:text-headingDarkText pb-1'>Nafis Mahmud Ayon</span>
+        <ul className='flex gap-2 items-center'>
+          <li><FacebookIcon className='w-6 aspect-square text-white' /></li>
+          <li><TwitterIcon className='w-6 aspect-square text-white' /></li>
+          <li><LinkedInIcon className='w-6 aspect-square text-white' /></li>
+          <li><GithubIcon className='w-6 aspect-square text-white' /></li>
+          <li><WhatsAppIcon className='w-6 aspect-square text-white' /></li>
+          <li><TelegramIcon className='w-6 aspect-square text-white' /></li>
+          </ul>
       </motion.div>
     </div>
   )

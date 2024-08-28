@@ -2,8 +2,8 @@
 // import { useEffect, useState } from "react";
 import AboutMe from "@/components/AboutMe/AboutMe";
 import HeroSection from "@/components/Header/HeroSection";
-import NavBar from "@/components/Header/NavBar";
-import { supabase } from "@/createClient";
+import Skills from "@/components/Skills/Skills";
+// import { supabase } from "@/createClient";
 
 export default function Home() {
   // const [getData, setGetData] = useState([]);
@@ -51,6 +51,7 @@ export default function Home() {
     <main className="w-full ">
       <HeroSection />
       <AboutMe />
+      <Skills />
     </main>
   );
 }
