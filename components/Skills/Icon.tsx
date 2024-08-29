@@ -31,7 +31,7 @@ const Icon: React.FC<iconProps> = ({ className, icon, initialAnimation = "bottom
   }
   return (
     <motion.div
-      className={`${className} flex flex-col relative`}
+      className={`${className} flex flex-col items-center relative`}
       initial={initialVariant}
       animate={{ y: 0, opacity: 1 }}
       transition={{ ...spring, delay: 0.2 }}

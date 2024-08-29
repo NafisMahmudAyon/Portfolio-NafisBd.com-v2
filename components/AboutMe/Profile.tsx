@@ -39,12 +39,12 @@ const Profile = () => {
         >
         <span className='text-headingText dark:text-headingDarkText pb-1'>Nafis Mahmud Ayon</span>
         <ul className='flex gap-2 items-center'>
-          <li><FacebookIcon className='w-6 aspect-square text-white' /></li>
-          <li><TwitterIcon className='w-6 aspect-square text-white' /></li>
-          <li><LinkedInIcon className='w-6 aspect-square text-white' /></li>
-          <li><GithubIcon className='w-6 aspect-square text-white' /></li>
-          <li><WhatsAppIcon className='w-6 aspect-square text-white' /></li>
-          <li><TelegramIcon className='w-6 aspect-square text-white' /></li>
+          <li><FacebookIcon className='w-6 aspect-square text-headingText dark:text-headingDarkText' /></li>
+          <li><TwitterIcon className='w-6 aspect-square text-headingText dark:text-headingDarkText' /></li>
+          <li><LinkedInIcon className='w-6 aspect-square text-headingText dark:text-headingDarkText' /></li>
+          <li><GithubIcon className='w-6 aspect-square text-headingText dark:text-headingDarkText' /></li>
+          <li><WhatsAppIcon className='w-6 aspect-square text-headingText dark:text-headingDarkText' /></li>
+          <li><TelegramIcon className='w-6 aspect-square text-headingText dark:text-headingDarkText' /></li>
           </ul>
       </motion.div>
     </div>
