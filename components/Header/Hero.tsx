@@ -29,7 +29,7 @@ const Hero = () => {
           {/* <span className='bg-white-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-4 py-1 absolute top-1/2 border-2 border-primaryColor/35 -left-8 '>Hello</span> */}
         {/* </div> */}
         <motion.div
-          className="w-[400px] h-auto rounded-2xl drop-shadow-lg"
+          className="w-[400px] h-auto rounded-2xl drop-shadow-lg border border-primaryColor/25 "
           initial={{ x: 100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ...spring, delay: 0.2 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

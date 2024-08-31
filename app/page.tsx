@@ -1,6 +1,7 @@
 // 'use client'
 // import { useEffect, useState } from "react";
 import AboutMe from "@/components/AboutMe/AboutMe";
+import Experience from "@/components/Experience/Experience";
 import HeroSection from "@/components/Header/HeroSection";
 import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/Skills/Skills";
@@ -55,6 +56,7 @@ export default function Home() {
         <AboutMe />
         <Skills />
         <Projects />
+        <Experience />
       </div>
     </main>
   );
