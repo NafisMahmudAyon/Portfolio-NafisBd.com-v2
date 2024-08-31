@@ -10,11 +10,11 @@ interface KeyFeature {
 interface FormData {
   title: string;
   short_description: string;
-  project_type: string[];
+  project_type: string[];  // Explicitly typing as string[]
   project_status: string;
   date_started: string;
   date_complete: string;
-  tech_use: string[];
+  tech_use: string[];  // Explicitly typing as string[]
   project_url: string;
   role: string;
   client_name: string;
@@ -23,25 +23,25 @@ interface FormData {
   challenges_faced: string;
   lessons_learned: string;
   team_size: number;
-  collaborators: string[];
-  project_images: string[];
-  project_videos: string[];
-  documentation_links: string[];
+  collaborators: string[];  // Explicitly typing as string[]
+  project_images: string[];  // Explicitly typing as string[]
+  project_videos: string[];  // Explicitly typing as string[]
+  documentation_links: string[];  // Explicitly typing as string[]
   github_repo: string;
-  downloadable_resources: string[];
-  tags: string[];
-  description: string[];
+  downloadable_resources: string[];  // Explicitly typing as string[]
+  tags: string[];  // Explicitly typing as string[]
+  description: string[];  // Explicitly typing as string[]
 }
 
 const ProjectForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     title: '',
     short_description: '',
-    project_type: [],
+    project_type: [],  // Initialized as string[]
     project_status: '',
     date_started: '',
     date_complete: '',
-    tech_use: [],
+    tech_use: [],  // Initialized as string[]
     project_url: '',
     role: '',
     client_name: '',
@@ -50,14 +50,14 @@ const ProjectForm: React.FC = () => {
     challenges_faced: '',
     lessons_learned: '',
     team_size: 0,
-    collaborators: [],
-    project_images: [],
-    project_videos: [],
-    documentation_links: [],
+    collaborators: [],  // Initialized as string[]
+    project_images: [],  // Initialized as string[]
+    project_videos: [],  // Initialized as string[]
+    documentation_links: [],  // Initialized as string[]
     github_repo: '',
-    downloadable_resources: [],
-    tags: [],
-    description: [],
+    downloadable_resources: [],  // Initialized as string[]
+    tags: [],  // Initialized as string[]
+    description: [],  // Initialized as string[]
   });
 
   console.log(formData)
@@ -118,24 +118,29 @@ const ProjectForm: React.FC = () => {
     const dateComplete = formatToISOWithTimezone(formData.date_complete);
 
     // Assuming key_features is already in the correct format (array of objects)
-    const keyFeaturesArray = Array.isArray(formData.key_features)
-      ? formData.key_features
-      : formData.key_features.split(',').map((feature: string) => {
-        const [title, desc] = feature.split(':');
-        return { title: title.trim(), desc: desc.trim() };
-      });
+    // const keyFeaturesArray = Array.isArray(formData.key_features)
+    //   ? formData.key_features
+    //   : formData.key_features.split(',').map((feature: string) => {
+    //     const [title, desc] = feature.split(':');
+    //     return { title: title.trim(), desc: desc.trim() };
+    //   });
 
-    const tagsArray = Array.isArray(formData.tags)
-      ? formData.tags
-      : formData.tags.split(',').map((tag: string) => tag.trim());
+    const keyFeaturesArray = formData.key_features;
 
-    const projectImagesArray = Array.isArray(formData.project_images)
-      ? formData.project_images
-      : formData.project_images.split(',').map((image: string) => image.trim());
+    // const tagsArray = Array.isArray(formData.tags)
+    //   ? formData.tags
+    //   : formData.tags.split(',').map((tag: string) => tag.trim());
+    const tagsArray = formData.tags
 
-    const descriptionArray = Array.isArray(formData.description)
-      ? formData.description
-      : formData.description.split(',').map((desc: string) => desc.trim());
+    // const projectImagesArray = Array.isArray(formData.project_images)
+    //   ? formData.project_images
+    //   : formData.project_images.split(',').map((image: string) => image.trim());
+    const projectImagesArray = formData.project_images
+    
+    // const descriptionArray = Array.isArray(formData.description)
+    //   ? formData.description
+    //   : formData.description.split(',').map((desc: string) => desc.trim());
+    const descriptionArray = formData.description
 
     const { data, error } = await supabase
       .from('projects')
