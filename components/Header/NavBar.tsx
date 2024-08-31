@@ -23,8 +23,8 @@ const NavBar = () => {
             href="#skills"
           />
           <NavItem
-            text="Work"
-            href="#work"
+            text="Projects"
+            href="#projects"
           />
           <NavItem
             text="Experience"

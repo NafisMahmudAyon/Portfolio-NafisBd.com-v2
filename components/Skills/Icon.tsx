@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react'
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import ProgressBar from './Progress';
+import { oswald } from '@/app/fonts';
 
 interface iconProps {
   className?: string;
@@ -9,32 +10,17 @@ interface iconProps {
   progress?: number;
   initialAnimation?: "top" | "bottom";
   text?: string;
+  variants?: Variants
 }
 
-const Icon: React.FC<iconProps> = ({ className, icon, initialAnimation = "bottom", progress, text }) => {
+const Icon: React.FC<iconProps> = ({ className, icon, progress, text, variants }) => {
 
   const [isHovered, setIsHovered] = useState(false);
-  const topInitial= {
-    opacity: 0,
-    y: 50,
-  }
-  const bottomInitial= {
-    opacity: 0,
-    y: -50,
-  }
-  const initialVariant = initialAnimation === "top" ? topInitial : bottomInitial;
-  const spring = {
-    type: "spring",
-    damping: 10,
-    stiffness: 100,
-    ease: "easeInOut"
-  }
+  
   return (
     <motion.div
-      className={`${className} flex flex-col items-center relative`}
-      initial={initialVariant}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ ...spring, delay: 0.2 }}
+      className={`${className} ${oswald.className} flex flex-col items-center relative`}
+      variants={variants}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -42,10 +28,10 @@ const Icon: React.FC<iconProps> = ({ className, icon, initialAnimation = "bottom
       <span className='font-extralight text-headingText dark:text-headingDarkText'>{text}</span>
       {isHovered && (
         <motion.div
-          className="absolute -top-full left-1/2 !-translate-x-1/2 bg-primaryColor bg-opacity-30 backdrop-blur-sm px-4 py-2 flex items-start justify-center flex-col rounded-lg border border-primaryColor w-48 "
+          className="absolute -top-2/3 left-1/2 !-translate-x-1/2 -translate-y-1/2 bg-primaryColor bg-opacity-30 backdrop-blur-sm px-4 py-2 flex items-start justify-center flex-col rounded-lg border border-primaryColor w-48 "
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <ProgressBar progress={progress} text={text} />
         </motion.div>

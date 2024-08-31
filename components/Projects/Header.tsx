@@ -2,19 +2,22 @@
 import React, { useRef } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from "framer-motion"
-import HeadingSection from '../HeadingSection'
-import Heading from '../Heading'
-import IconSection from './IconSection'
+import HeadingSection from '../HeadingSection';
+import Heading from '../Heading';
 
-const Skills = () => {
+
+const Header = () => {
+
   const controls = useAnimation();
   const ref = useRef(null)
   const isInView = useInView(ref)
+
   React.useEffect(() => {
     if (isInView) {
       controls.start('visible');
     }
   }, [controls, isInView]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -24,6 +27,7 @@ const Skills = () => {
       },
     },
   };
+
   const childVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: {
@@ -35,7 +39,7 @@ const Skills = () => {
       }
     },
   };
-  const childVariants1 = {
+  const childVariant2 = {
     hidden: { opacity: 0, x: 100 },
     visible: {
       opacity: 1, x: 0, transition: {
@@ -46,18 +50,19 @@ const Skills = () => {
       }
     },
   };
+
   return (
     <motion.div
       ref={ref}
+      className="text-center"
       variants={containerVariants}
       initial="hidden"
-      animate={controls} id='skills' className='grid place-items-center px-16 py-36'>
-      <HeadingSection text='Skills' variants={childVariants} />
-      <Heading text='The skills, tools and technologies' className='mt-6 mb-0' variants={childVariants1} />
-      <Heading text='I am really good at' className='mb-6 mt-0' variants={childVariants1} />
-      <IconSection />
+      animate={controls}
+    >
+      <HeadingSection text="Projects" variants={childVariants} />
+      <Heading text="Things I&apos;ve built so far" variants={childVariant2} />
     </motion.div>
   )
 }
 
-export default Skills
+export default Header

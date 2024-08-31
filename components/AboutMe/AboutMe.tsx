@@ -4,7 +4,7 @@ import Profile from './Profile'
 
 const AboutMe = () => {
   return (
-    <div id='about' className='grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 bg-[#f1f6fa] dark:bg-[#272727] mx-auto max-w-[1440px] shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl px-16 py-20'>
+    <div id='about' className='grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5  px-16 pb-20'>
       <div className='grid place-items-center xl:col-start-1 xl:col-end-3'>
         <Profile />
       </div>

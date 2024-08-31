@@ -2,6 +2,7 @@
 // import { useEffect, useState } from "react";
 import AboutMe from "@/components/AboutMe/AboutMe";
 import HeroSection from "@/components/Header/HeroSection";
+import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/Skills/Skills";
 // import { supabase } from "@/createClient";
 
@@ -50,8 +51,11 @@ export default function Home() {
   return (
     <main className="w-full ">
       <HeroSection />
-      <AboutMe />
-      <Skills />
+      <div className="bg-[#f1f6fa] dark:bg-[#272727] mx-auto max-w-[1440px] shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl py-36">
+        <AboutMe />
+        <Skills />
+        <Projects />
+      </div>
     </main>
   );
 }
