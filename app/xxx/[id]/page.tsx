@@ -66,7 +66,7 @@ const UpdateProjectForm: React.FC = () => {
     description: [],
   });
 
-  console.log(formData);
+  // console.log(formData);
 
   useEffect(() => {
     if (id) {
