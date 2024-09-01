@@ -5,14 +5,16 @@ import { useAccordion } from "./AccordionContext";
 
 interface AccordionHeaderProps {
   children: React.ReactNode;
+  className?: string;
+  activeStyle?: string;
 }
 
-export const AccordionHeader: React.FC<AccordionHeaderProps> = ({ children }) => {
+export const AccordionHeader: React.FC<AccordionHeaderProps> = ({ children, className="", activeStyle="" }) => {
   const { isActive, index, onChangeIndex } = useAccordion();
 
   return (
     <motion.div
-      className={`AccordionHeader ${isActive ? "active" : ""}`}
+      className={`${className} ${isActive ? activeStyle : ""}`}
       onClick={() => onChangeIndex(index)}
     >
       {children}

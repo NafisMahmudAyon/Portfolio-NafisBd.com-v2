@@ -6,9 +6,10 @@ interface AccordionProps {
   children: React.ReactNode;
   multiple?: boolean;
   defaultIndex?: number | number[];
+  className?: string;
 }
 
-export const Accordion: React.FC<AccordionProps> = ({ children, multiple = false, defaultIndex = multiple ? [] : -1 }) => {
+export const Accordion: React.FC<AccordionProps> = ({ children, multiple = false, className="", defaultIndex = multiple ? [] : -1 }) => {
   const [activeIndex, setActiveIndex] = useState<number | number[]>(defaultIndex);
 
   const onChangeIndex = (index: number) => {
@@ -26,7 +27,7 @@ export const Accordion: React.FC<AccordionProps> = ({ children, multiple = false
   };
 
   return (
-    <>
+    <div className={`${className}`}>
       {React.Children.map(children, (child, index) => {
         const isActive =
           multiple && Array.isArray(activeIndex)
@@ -39,6 +40,6 @@ export const Accordion: React.FC<AccordionProps> = ({ children, multiple = false
           </AccordionContext.Provider>
         );
       })}
-    </>
+    </div>
   );
 };

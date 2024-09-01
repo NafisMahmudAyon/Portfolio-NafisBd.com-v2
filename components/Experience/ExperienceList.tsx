@@ -1,22 +1,21 @@
+import { Accordion, AccordionHeader, AccordionItem, AccordionPanel } from 'nexus-accordion'
 import React from 'react'
-import { Accordion } from '../Accordion/Accordion'
-import { AccordionItem } from '../Accordion/AccordionItem'
-import { AccordionHeader } from '../Accordion/AccordionHeader' 
-import { AccordionPanel } from '../Accordion/AccordionPanel'
+
 
 const ExperienceList = () => {
+  const data = [
+    {title: "title-1", panel: "panel-1"},
+    {title: "title-2", panel: "panel-2"}
+  ]
   return (
     <div><section className="App">
       <h2>Collapsible</h2>
-      <Accordion>
-        {[...Array(2)].map((_, i) => (
+      <Accordion className=''>
+        {data.map((_, i) => (
           <AccordionItem key={i}>
-            <AccordionHeader>Accordion {i + 1}</AccordionHeader>
+            <AccordionHeader>{_.title}</AccordionHeader>
             <AccordionPanel>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod
-              explicabo, nam sapiente id nostrum ex, ab numquam, doloremque
-              aspernatur quisquam illo! Officiis explicabo laborum incidunt
-              corrupti provident esse eligendi.
+              {_.panel}
             </AccordionPanel>
           </AccordionItem>
         ))}
@@ -26,7 +25,7 @@ const ExperienceList = () => {
 
       <h2>Multiple</h2>
       <Accordion multiple>
-        {[...Array(2)].map((_, i) => (
+        {data.map((_, i) => (
           <AccordionItem key={i}>
             <AccordionHeader>Accordion {i + 1}</AccordionHeader>
             <AccordionPanel>

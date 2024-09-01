@@ -100,39 +100,38 @@ const ProjectsGrid: React.FC = () => {
       animate={controls}
       className={`px-16 pb-20 ${poppins.className}`}
     >
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 grid-rows-[repeat(5_,_auto)] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {getData.slice(0, 3).map((project) => (
           <motion.div
             key={project.id}
             variants={childVariants}
-            className="rounded-lg overflow-hidden border border-normalText/25 drop-shadow-lg bg-[#272727]"
+            className="rounded-lg overflow-hidden border grid gap-0 grid-rows-subgrid row-span-5 border-normalText/25 drop-shadow-lg bg-[#ecf4fd] dark:bg-[#272727]"
           >
             <img
               src={project.project_images.length === 0 ? 'https://via.placeholder.com/600x400' : project.project_images[0]}
               alt={project.title}
               className="object-cover w-full aspect-[3/2]"
             />
-            <div className="p-4">
-              <h4 className={`text-lg font-bold text-headingText dark:text-headingDarkText ${poppins.className}`}>
+            
+              <h4 className={`text-lg px-4 pt-4 font-bold text-headingText dark:text-headingDarkText ${poppins.className}`}>
                 {project.title}
               </h4>
-              <p className={`py-4 text-sm font-thin text-normalText dark:text-normalDarkText ${poppins.className}`}>
+              <p className={`py-4 px-4 text-sm font-light text-normalText dark:text-normalDarkText ${poppins.className}`}>
                 {project.short_description}
               </p>
-              <div className={`flex gap-2 font-thin text-xs text-normalText dark:text-normalDarkText ${poppins.className}`}>
+              <div className={`flex px-4 gap-2 font-extralight text-xs text-normalText dark:text-normalDarkText ${poppins.className}`}>
                 {project.tags.slice(0, 3).map((tag, i) => (
-                  <span key={i} className="px-2 py-1 bg-[#353535] rounded-md">
+                  <span key={i} className="px-2 py-1 text-normalText dark:text-normalDarkText bg-[#dfe8f1] dark:bg-[#353535] rounded-md">
                     {tag}
                   </span>
                 ))}
               </div>
-              <div className="flex justify-between font-thin text-xs text-normalText dark:text-normalDarkText pt-4">
+              <div className="flex px-4 pb-4 justify-between font-extralight text-xs text-headingText dark:text-headingDarkText pt-4">
                 <a href={project.project_url} className="flex items-center gap-2">Live Preview</a>
                 <a href={project.github_repo || "#"} className="flex items-center gap-2">
                   <GithubIcon className="w-5 text-normalText dark:text-normalDarkText" /> View Code
                 </a>
               </div>
-            </div>
           </motion.div>
         ))}
       </div>

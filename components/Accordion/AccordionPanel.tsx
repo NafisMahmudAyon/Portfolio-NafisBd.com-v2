@@ -5,21 +5,22 @@ import { useAccordion } from "./AccordionContext";
 
 interface AccordionPanelProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-export const AccordionPanel: React.FC<AccordionPanelProps> = ({ children }) => {
+export const AccordionPanel: React.FC<AccordionPanelProps> = ({ children, className }) => {
   const { isActive } = useAccordion();
 
   return (
     <AnimatePresence initial={false}>
       {isActive && (
         <motion.div
-          initial={{ height: 0 }}
-          animate={{ height: "auto" }}
-          exit={{ height: 0 }}
+          initial={{ height: 0, opacity: 0 }}
+          animate={{ height: "auto", opacity: 1 }}
+          exit={{ height: 0, opacity: 0 }}
           transition={{ type: "spring", duration: 0.4, bounce: 0 }}
         >
-          <div className="AccordionPanel">{children}</div>
+          <div className={`${className}`}>{children}</div>
         </motion.div>
       )}
     </AnimatePresence>

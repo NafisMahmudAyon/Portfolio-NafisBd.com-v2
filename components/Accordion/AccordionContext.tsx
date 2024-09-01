@@ -5,6 +5,7 @@ interface AccordionContextProps {
   isActive: boolean;
   index: number;
   onChangeIndex: (index: number) => void;
+  className?: string;
 }
 
 export const AccordionContext = createContext<AccordionContextProps | undefined>(undefined);

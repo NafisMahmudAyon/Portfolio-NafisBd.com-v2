@@ -60,7 +60,7 @@ const ProjectForm: React.FC = () => {
     description: [],  // Initialized as string[]
   });
 
-  console.log(formData)
+  // console.log(formData)
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
