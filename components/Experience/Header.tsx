@@ -53,8 +53,8 @@ const Header = () => {
 
   return (
     <motion.div
+    className="text-center"
       ref={ref}
-      className="text-center"
       variants={containerVariants}
       initial="hidden"
       animate={controls}

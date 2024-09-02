@@ -567,3 +567,13 @@ export const VSCodeIcon: React.FC<IconsProps> = ({ className = "", ...props }) =
   <svg viewBox="0 0 24 24" fill="none" className={`${className}`}
     {...props} xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M25.057 6.095v14.861c0 .732-.455 1.384-1.141 1.626l-5.085 2.386.462-6.254V8.338l-.462-6.255 5.085 2.387a1.72 1.72 0 0 1 1.141 1.625" fill="#29B6F6" /><path d="M4.881 19.23 19.293 8.337v-5.56c0-.691-.855-1.014-1.312-.497L2.378 16.546a1.153 1.153 0 0 0 .062 1.748s.763.71 1.04.908c.423.302.98.337 1.401.029" fill="#0277BD" /><path d="m4.881 7.82 14.412 10.894v5.56c0 .691-.855 1.014-1.312.496L2.378 10.505a1.153 1.153 0 0 1 .062-1.747s.763-.71 1.04-.908c.423-.302.98-.337 1.401-.03" fill="#0288D1" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z" /></clipPath></defs></svg>
 )
+
+export const LocationIcon: React.FC<IconsProps> = ({ className = "", ...props }) => (
+  <svg width="18" height="24" viewBox="0 0 18 24" fill="currentColor" className={`${className}`}
+    {...props} xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M10.11 23.4C12.517 20.39 18 13.097 18 9c0-4.969-4.031-9-9-9S0 4.031 0 9c0 4.097 5.484 11.39 7.89 14.4a1.416 1.416 0 0 0 2.22 0M9 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6" fill="currentColor" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v24H0z" /></clipPath></defs></svg>
+)
+
+export const LinkIcon: React.FC<IconsProps> = ({ className = "", ...props }) => (
+  <svg width="24" height="20" viewBox="0 0 24 20" fill="currentColor" className={`${className}`}
+    {...props} xmlns="http://www.w3.org/2000/svg"><path d="M21.743 10.039a5.42 5.42 0 0 0 0-7.669 5.42 5.42 0 0 0-6.987-.577l-.06.04a1.197 1.197 0 0 0-.277 1.673 1.2 1.2 0 0 0 1.672.278l.06-.041a3.022 3.022 0 0 1 3.893 4.597l-4.208 4.215a3.022 3.022 0 0 1-4.597-3.892l.041-.06a1.2 1.2 0 0 0-1.95-1.395l-.041.06a5.42 5.42 0 0 0 8.243 6.983zM2.258 9.16a5.42 5.42 0 0 0 0 7.67 5.42 5.42 0 0 0 6.986.577l.06-.042c.54-.386.664-1.136.277-1.672a1.2 1.2 0 0 0-1.672-.278l-.06.042a3.02 3.02 0 0 1-3.893-.323 3.026 3.026 0 0 1 0-4.279l4.208-4.21a3.024 3.024 0 0 1 4.598 3.896l-.042.06a1.2 1.2 0 0 0 1.95 1.394l.041-.06A5.42 5.42 0 0 0 6.468 4.95z" fill="currentColor" /></svg>
+)

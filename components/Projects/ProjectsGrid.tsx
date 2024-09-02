@@ -5,7 +5,7 @@ import { supabase } from "@/components/createClient";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from "framer-motion";
 import { poppins } from '@/app/fonts';
-import { GithubIcon } from '../Icons';
+import { GithubIcon, LinkIcon } from '../Icons';
 
 interface Project {
   id: number;
@@ -127,7 +127,7 @@ const ProjectsGrid: React.FC = () => {
                 ))}
               </div>
               <div className="flex px-4 pb-4 justify-between font-extralight text-xs text-headingText dark:text-headingDarkText pt-4">
-                <a href={project.project_url} className="flex items-center gap-2">Live Preview</a>
+              <a href={project.project_url} className="flex items-center gap-1"><LinkIcon className='h-3' />Live Preview</a>
                 <a href={project.github_repo || "#"} className="flex items-center gap-2">
                   <GithubIcon className="w-5 text-normalText dark:text-normalDarkText" /> View Code
                 </a>

@@ -60,7 +60,7 @@
     "framer-motion": "^11.3.30",
     "landing-page-ui": "^2.1.49",
     "next": "14.2.4",
-    "nexus-accordion": "^0.0.1",
+    "nexus-accordion": "^0.0.6",
     "react": "^18",
     "react-dom": "^18",
     "typofx": "^0.0.2"
