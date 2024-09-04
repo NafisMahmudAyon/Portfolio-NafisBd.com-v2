@@ -1,6 +1,7 @@
 // 'use client'
 // import { useEffect, useState } from "react";
 import AboutMe from "@/components/AboutMe/AboutMe";
+import CallToAction from "@/components/CallToAction/CallToAction";
 import Experience from "@/components/Experience/Experience";
 import HeroSection from "@/components/Header/HeroSection";
 import Projects from "@/components/Projects/Projects";
@@ -57,6 +58,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Experience />
+        <CallToAction />
       </div>
     </main>
   );
