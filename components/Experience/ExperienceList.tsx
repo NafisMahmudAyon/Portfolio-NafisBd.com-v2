@@ -39,8 +39,8 @@ const ExperienceList = () => {
       initial="hidden"
       animate={controls}>
       <Accordion defaultIndex={0}>
-        <AccordionItem className='p-4 border mb-4 rounded-md '>
-          <AccordionHeader className={`gap-3 cursor-pointer ${oswald.className} `} activeStyle='pb-2 border-b' iconStyle='text-primaryColor w-4 '>
+        <AccordionItem className='p-4 border border-primaryColor/30 mb-4 rounded-md '>
+          <AccordionHeader className={`gap-3 cursor-pointer ${oswald.className} `} activeStyle='pb-2 border-b border-primaryColor' iconStyle='text-primaryColor w-4 '>
             <div className='flex flex-1 items-center justify-between text-headingText dark:text-headingDarkText'>
               <span className='font-semibold'>FrontEnd Web Developer @ PickPlugins</span>
               <span>Dec 2022 - Present</span>
@@ -61,8 +61,8 @@ const ExperienceList = () => {
             </div>
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem className='p-4 border mb-4 rounded-md '>
-          <AccordionHeader className={`gap-3 cursor-pointer ${oswald.className} `} activeStyle='pb-2 border-b' iconStyle='text-primaryColor w-4 '>
+        <AccordionItem className='p-4 border border-primaryColor/30 mb-4 rounded-md '>
+          <AccordionHeader className={`gap-3 cursor-pointer ${oswald.className} `} activeStyle='pb-2 border-b border-primaryColor' iconStyle='text-primaryColor w-4 '>
             <div className='flex flex-1 items-center justify-between text-headingText dark:text-headingDarkText'>
               <span className='font-semibold'>Full Stack Web Developer @ Freelancer</span>
               <span>Dec 2020 - Present</span>
