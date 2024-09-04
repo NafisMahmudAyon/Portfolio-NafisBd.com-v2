@@ -1,3 +1,3 @@
 export * from './components'
 
-import "../cjs/index.min.css";
+import '../cjs/index.min.css'

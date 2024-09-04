@@ -1,112 +1,109 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 // import "../../../css/output.css"
 
-interface ImageProps extends React.HTMLAttributes<HTMLDivElement | HTMLAnchorElement> {
-  src?: string;
-  alt: string;
-  imageCaption?: string;
-  captionEnabled?: boolean;
-  isLink?: boolean;
-  linkTo?: string;
-  target?: string;
-  lightBox?: boolean;
-  lightBoxImageSrc?: string;
-  lightBoxCaptionEnabled?: boolean;
-  lightBoxCaption?: string;
-  imageStyles?: string;
-  captionStyles?: string;
-  lightBoxStyles?: string;
-  lightBoxImageStyles?: string;
-  lightBoxCaptionStyles?: string;
-  closeButtonStyles?: string;
-  tagName?: string;
-  styles?: string;
-  lazyLoad?: boolean;
+interface ImageProps
+  extends React.HTMLAttributes<HTMLDivElement | HTMLAnchorElement> {
+  src?: string
+  alt: string
+  imageCaption?: string
+  captionEnabled?: boolean
+  isLink?: boolean
+  linkTo?: string
+  target?: string
+  lightBox?: boolean
+  lightBoxImageSrc?: string
+  lightBoxCaptionEnabled?: boolean
+  lightBoxCaption?: string
+  imageStyles?: string
+  captionStyles?: string
+  lightBoxStyles?: string
+  lightBoxImageStyles?: string
+  lightBoxCaptionStyles?: string
+  closeButtonStyles?: string
+  tagName?: string
+  styles?: string
+  lazyLoad?: boolean
 }
 
 export const Image: React.FC<ImageProps> = ({
-  src = "https://source.unsplash.com/random/600x600?nature=1",
-  alt = "Description of the image",
+  src = 'https://source.unsplash.com/random/600x600?nature=1',
+  alt = 'Description of the image',
   imageCaption,
   captionEnabled,
   isLink,
   linkTo,
-  target = "_self",
+  target = '_self',
   lightBox,
   lightBoxImageSrc,
   lightBoxCaptionEnabled,
   lightBoxCaption,
-  imageStyles = "",
-  captionStyles = "",
-  lightBoxStyles = "",
-  lightBoxImageStyles = "",
-  lightBoxCaptionStyles = "",
-  closeButtonStyles = "",
+  imageStyles = '',
+  captionStyles = '',
+  lightBoxStyles = '',
+  lightBoxImageStyles = '',
+  lightBoxCaptionStyles = '',
+  closeButtonStyles = '',
   tagName,
-  styles = "",
+  styles = '',
   lazyLoad,
   ...rest
 }) => {
-  let [customTag, setCustomTag]: any = useState(tagName || "div");
-  const CustomTag: any = customTag.toLowerCase();
-  const [isOpen, setIsOpen] = useState(false);
+  let [customTag, setCustomTag]: any = useState(tagName || 'div')
+  const CustomTag: any = customTag.toLowerCase()
+  const [isOpen, setIsOpen] = useState(false)
   // const [lightboxSrc, setLightboxSrc] = useState("");
 
   useEffect(() => {
     if (isLink) {
-      setCustomTag("a");
+      setCustomTag('a')
     } else {
-      setCustomTag(tagName || "div");
+      setCustomTag(tagName || 'div')
     }
-  }, [isLink, tagName]);
+  }, [isLink, tagName])
 
   const openLightbox = () => {
     // setLightboxSrc(src || "");
-    setIsOpen(true);
-  };
+    setIsOpen(true)
+  }
 
   const closeLightbox = () => {
-    setIsOpen(false);
-  };
-
+    setIsOpen(false)
+  }
 
   return (
     <CustomTag
-      className={` ${styles} relative `}
+      className={` ${styles} relative`}
       {...(isLink && {
         href: linkTo,
-        target: target,
+        target: target
       })}
     >
-      <figure className="flex flex-col items-center">
+      <figure className='flex flex-col items-center'>
         <img
-          className={` ${imageStyles} max-w-full h-auto `}
-          src={
-            src ||
-            "https://source.unsplash.com/random/800x600?nature"
-          }
+          className={` ${imageStyles} h-auto max-w-full`}
+          src={src || 'https://source.unsplash.com/random/800x600?nature'}
           alt={alt || imageCaption}
           onClick={linkTo ? undefined : lightBox ? openLightbox : undefined}
           {...rest}
         />
         {captionEnabled && (
           <figcaption
-            className={` ${captionStyles} text-gray-600 text-sm mt-2 `}
+            className={` ${captionStyles} text-gray-600 mt-2 text-sm`}
           >
-            {imageCaption || alt || "This is the caption for the image."}
+            {imageCaption || alt || 'This is the caption for the image.'}
           </figcaption>
         )}
       </figure>
       {isOpen && (
         <div
-          className={` ${lightBoxStyles} fixed top-0 left-0 w-full h-full bg-black bg-opacity-85 flex justify-center items-center z-[9999] overflow-auto `}
+          className={` ${lightBoxStyles} bg-black fixed left-0 top-0 z-[9999] flex h-full w-full items-center justify-center overflow-auto bg-opacity-85`}
         >
-          <div className="relative p-3 flex flex-col items-center">
+          <div className='relative flex flex-col items-center p-3'>
             <button
-              className={` ${closeButtonStyles} absolute top-0 right-5 h-8 w-8 flex items-center justify-center bg-red-500 rounded-full text-black hover:bg-gray-200 text-base `}
+              className={` ${closeButtonStyles} bg-red-500 text-black hover:bg-gray-200 absolute right-5 top-0 flex h-8 w-8 items-center justify-center rounded-full text-base`}
               onClick={closeLightbox}
             >
               &times;
@@ -115,24 +112,24 @@ export const Image: React.FC<ImageProps> = ({
               src={
                 lightBoxImageSrc ||
                 src ||
-                "https://source.unsplash.com/random/800x600?nature"
+                'https://source.unsplash.com/random/800x600?nature'
               }
-              alt={alt || "lightbox"}
-              className={` ${lightBoxImageStyles} max-w-[95%] w-full rounded-md`}
+              alt={alt || 'lightbox'}
+              className={` ${lightBoxImageStyles} w-full max-w-[95%] rounded-md`}
             />
             {lightBoxCaptionEnabled && (
               <figcaption
-                className={` ${lightBoxCaptionStyles} text-gray-400 text-sm mt-2 text-center `}
+                className={` ${lightBoxCaptionStyles} text-gray-400 mt-2 text-center text-sm`}
               >
                 {lightBoxCaption ||
                   imageCaption ||
                   alt ||
-                  "This is the caption for the image."}
+                  'This is the caption for the image.'}
               </figcaption>
             )}
           </div>
         </div>
       )}
     </CustomTag>
-  );
-};
+  )
+}

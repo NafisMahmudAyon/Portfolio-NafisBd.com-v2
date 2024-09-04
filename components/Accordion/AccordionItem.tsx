@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react'
 
 interface AccordionItemProps {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }
 
-export const AccordionItem: React.FC<AccordionItemProps> = ({ children, className="" }) => {
-  return <div className={`${className}`}>{children}</div>;
-};
+export const AccordionItem: React.FC<AccordionItemProps> = ({
+  children,
+  className = ''
+}) => {
+  return <div className={`${className}`}>{children}</div>
+}

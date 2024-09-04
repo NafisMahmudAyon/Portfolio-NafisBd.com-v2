@@ -5,7 +5,7 @@ import ExperienceList from './ExperienceList'
 
 const Experience = () => {
   return (
-    <div id='experience' className=' pt-20 '>
+    <div id='experience' className='pt-20'>
       <Header />
       {/* <Example /> */}
       <ExperienceList />

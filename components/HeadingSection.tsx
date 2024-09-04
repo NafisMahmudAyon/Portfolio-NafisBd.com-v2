@@ -9,7 +9,12 @@ interface HeadingSectionProps {
 
 const HeadingSection: React.FC<HeadingSectionProps> = ({ text, variants }) => {
   return (
-    <motion.h3 className='text-base px-4 py-2 bg-[#e0e6eb] dark:bg-[#2a2a2a] backdrop-blur-sm backdrop-filter drop-shadow-md inline-block rounded text-headingText dark:text-headingDarkText leading-none ' variants={variants}>{text}</motion.h3>
+    <motion.h3
+      className='inline-block rounded bg-[#e0e6eb] px-4 py-2 text-base leading-none text-headingText drop-shadow-md backdrop-blur-sm backdrop-filter dark:bg-[#2a2a2a] dark:text-headingDarkText'
+      variants={variants}
+    >
+      {text}
+    </motion.h3>
   )
 }
 

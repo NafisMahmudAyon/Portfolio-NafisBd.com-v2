@@ -1,31 +1,37 @@
 'use client'
 import React from 'react'
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion'
 
 interface NavItemProps {
-  text: string;
-  className?: string;
-  href?: string;
-  target?: string;
-  active?: boolean;
+  text: string
+  className?: string
+  href?: string
+  target?: string
+  active?: boolean
 }
 
-const NavItem: React.FC<NavItemProps> = ({ text, active, className="", href, target }) => {
+const NavItem: React.FC<NavItemProps> = ({
+  text,
+  active,
+  className = '',
+  href,
+  target
+}) => {
   const handleClick = (event: React.MouseEvent<HTMLLIElement>) => {
-    event.preventDefault();
+    event.preventDefault()
 
     if (href) {
       if (target === '_blank') {
-        window.open(href, '_blank');
+        window.open(href, '_blank')
       } else {
-        window.location.href = href;
+        window.location.href = href
       }
     }
-  };
+  }
 
   return (
     <motion.li
-      className={`${className} ${active ? 'text-headingText dark:text-headingDarkText underline underline-offset-4' : 'text-normalText dark:text-normalDarkText hover:text-headingText dark:hover:text-headingDarkText hover:underline hover:underline-offset-4 underline-offset-4 '}`}
+      className={`${className} ${active ? 'text-headingText underline underline-offset-4 dark:text-headingDarkText' : 'text-normalText underline-offset-4 hover:text-headingText hover:underline hover:underline-offset-4 dark:text-normalDarkText dark:hover:text-headingDarkText'}`}
       onClick={handleClick}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
@@ -36,4 +42,4 @@ const NavItem: React.FC<NavItemProps> = ({ text, active, className="", href, tar
   )
 }
 
-export default NavItem;
+export default NavItem

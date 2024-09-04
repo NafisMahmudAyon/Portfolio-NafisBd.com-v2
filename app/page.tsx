@@ -1,11 +1,11 @@
 // 'use client'
 // import { useEffect, useState } from "react";
-import AboutMe from "@/components/AboutMe/AboutMe";
-import CallToAction from "@/components/CallToAction/CallToAction";
-import Experience from "@/components/Experience/Experience";
-import HeroSection from "@/components/Header/HeroSection";
-import Projects from "@/components/Projects/Projects";
-import Skills from "@/components/Skills/Skills";
+import AboutMe from '@/components/AboutMe/AboutMe'
+import CallToAction from '@/components/CallToAction/CallToAction'
+import Experience from '@/components/Experience/Experience'
+import HeroSection from '@/components/Header/HeroSection'
+import Projects from '@/components/Projects/Projects'
+import Skills from '@/components/Skills/Skills'
 // import { supabase } from "@/createClient";
 
 export default function Home() {
@@ -51,9 +51,9 @@ export default function Home() {
   // }
 
   return (
-    <main className="w-full ">
+    <main className='w-full'>
       <HeroSection />
-      <div className="bg-[#f1f6fa] dark:bg-[#272727] mx-auto max-w-[1440px] shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl py-36">
+      <div className='mx-auto max-w-[1440px] bg-[#f1f6fa] py-36 shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#272727]'>
         <AboutMe />
         <Skills />
         <Projects />
@@ -61,5 +61,5 @@ export default function Home() {
         <CallToAction />
       </div>
     </main>
-  );
+  )
 }

@@ -1,1 +1,1 @@
-export declare const Tooltip: () => import("react/jsx-runtime").JSX.Element;
+export declare const Tooltip: () => import('react/jsx-runtime').JSX.Element

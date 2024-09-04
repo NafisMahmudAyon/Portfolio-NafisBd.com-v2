@@ -6,12 +6,21 @@ import { poppins } from '@/app/fonts'
 interface HeadingProps {
   text: string
   className?: string
-  variants?: Variants;
+  variants?: Variants
 }
 
-const Heading: React.FC<HeadingProps> = ({ text, className="", variants }) => {
+const Heading: React.FC<HeadingProps> = ({
+  text,
+  className = '',
+  variants
+}) => {
   return (
-    <motion.h2 className={`${className} ${poppins.className} text-primaryColor my-6 text-2xl font-medium `} variants={variants}>{text}</motion.h2>
+    <motion.h2
+      className={`${className} ${poppins.className} my-6 text-2xl font-medium text-primaryColor`}
+      variants={variants}
+    >
+      {text}
+    </motion.h2>
   )
 }
 
