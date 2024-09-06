@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <div
       id='about'
-      className='grid grid-cols-1 px-4 pb-4 md:grid-cols-3 md:gap-14 md:px-8 md:pb-6 lg:gap-0 lg:px-16 lg:pb-20 xl:grid-cols-5'
+      className='grid grid-cols-1 px-4 pb-4 md:grid-cols-3 md:gap-14 md:px-8 md:pb-6 lg:gap-0 lg:px-16 lg:pb-20 xl:grid-cols-5 bg-right'
     >
       <div className='grid place-items-center xl:col-start-1 xl:col-end-3'>
         <Profile />
