@@ -38,7 +38,7 @@ const ExperienceList = () => {
 
   return (
     <motion.div
-      className='mx-auto max-w-[760px]'
+      className='mx-auto max-w-[760px] px-4'
       ref={ref}
       variants={containerVariants}
       initial='hidden'
@@ -51,11 +51,12 @@ const ExperienceList = () => {
             activeStyle='pb-2 border-b border-primaryColor'
             iconStyle='text-primaryColor w-4 '
           >
-            <div className='flex flex-1 items-center justify-between text-headingText dark:text-headingDarkText'>
+            <div className='flex flex-1 flex-col items-start text-headingText dark:text-headingDarkText md:flex-row md:items-center md:justify-between'>
               <span className='font-semibold'>
-                FrontEnd Web Developer @ PickPlugins
+                FrontEnd Web Developer{' '}
+                <span className='text-primaryColor'>@</span> PickPlugins
               </span>
-              <span>Dec 2022 - Present</span>
+              <span className='font-light'>Dec 2022 - Present</span>
             </div>
           </AccordionHeader>
           <AccordionPanel className='pt-2'>
@@ -69,11 +70,11 @@ const ExperienceList = () => {
                 <span>pickplugins.com</span>
               </span>
             </div>
-            <div className='py-3 text-headingText dark:text-headingDarkText'>
+            <div className='py-3 font-normal text-headingText dark:text-headingDarkText'>
               Developing WordPress plugins in PickPlugins, Tech used React, PHP,
               JavaScript.{' '}
             </div>
-            <div className='flex items-center gap-2 text-xs font-extralight'>
+            <div className='flex items-center gap-2 overflow-auto text-xs font-extralight'>
               {[
                 'HTML',
                 'CSS',
@@ -103,11 +104,12 @@ const ExperienceList = () => {
             activeStyle='pb-2 border-b border-primaryColor'
             iconStyle='text-primaryColor w-4 '
           >
-            <div className='flex flex-1 items-center justify-between text-headingText dark:text-headingDarkText'>
+            <div className='flex flex-1 flex-col items-start text-headingText dark:text-headingDarkText md:flex-row md:items-center md:justify-between'>
               <span className='font-semibold'>
-                Full Stack Web Developer @ Freelancer
+                Full Stack Web Developer{' '}
+                <span className='text-primaryColor'>@</span> Freelancer
               </span>
-              <span>Dec 2020 - Present</span>
+              <span className='font-light'>Dec 2020 - Present</span>
             </div>
           </AccordionHeader>
           <AccordionPanel className='pt-2'>
@@ -121,11 +123,11 @@ const ExperienceList = () => {
                 <span>fiverr.com</span>
               </span>
             </div>
-            <div className='py-3 text-headingText dark:text-headingDarkText'>
+            <div className='py-3 font-normal text-headingText dark:text-headingDarkText'>
               Developed Full Stack web application, Tech used React, JavaScript,
               PHP.{' '}
             </div>
-            <div className='flex items-center gap-2 text-xs font-extralight'>
+            <div className='flex items-center gap-2 overflow-auto text-xs font-extralight'>
               {[
                 'HTML',
                 'CSS',

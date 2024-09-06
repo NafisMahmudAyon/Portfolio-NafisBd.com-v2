@@ -66,13 +66,14 @@ const ContactForm: React.FC<ContactFormProps> = ({}) => {
     <>
       <form
         onSubmit={handleSubmit}
-        className='mx-auto mt-10 grid max-w-[800px] grid-cols-2 rounded-lg px-8 py-2'
+        className='mt-10 flex max-w-[800px] grid-cols-2 flex-col gap-4 rounded-lg py-2 md:!grid md:px-8'
       >
         <div className='form-row col-start-1 col-end-2'>
           <div className='input-data'>
             <input
               type='text'
               name='name'
+              className='text-headingText dark:text-headingDarkText'
               value={formData.name}
               onChange={e => setFormData({ ...formData, name: e.target.value })}
               required
@@ -86,6 +87,7 @@ const ContactForm: React.FC<ContactFormProps> = ({}) => {
             <input
               type='email'
               name='email'
+              className='text-headingText dark:text-headingDarkText'
               value={formData.email}
               onChange={e =>
                 setFormData({ ...formData, email: e.target.value })
@@ -100,6 +102,7 @@ const ContactForm: React.FC<ContactFormProps> = ({}) => {
           <div className='input-data textarea'>
             <textarea
               name='message'
+              className='text-headingText dark:text-headingDarkText'
               value={formData.message}
               onChange={e =>
                 setFormData({ ...formData, message: e.target.value })
@@ -112,7 +115,7 @@ const ContactForm: React.FC<ContactFormProps> = ({}) => {
         </div>
 
         <button
-          className='cursor-design col-start-1 col-end-3 mt-10 flex flex-col items-center justify-center rounded-lg border border-primaryColor bg-primaryColor bg-opacity-10 px-8 py-2 text-center backdrop-blur-xl'
+          className='cursor-design col-start-1 col-end-3 mt-10 flex flex-col items-center justify-center rounded-lg border border-primaryColor bg-primaryColor bg-opacity-10 px-8 py-2 text-center text-headingText backdrop-blur-xl dark:text-headingDarkText'
           type='submit'
           disabled={loading}
         >

@@ -96,7 +96,7 @@ const ProjectsGrid: React.FC = () => {
       variants={containerVariants}
       initial='hidden'
       animate={controls}
-      className={`px-16 pb-20 ${poppins.className}`}
+      className={`px-4 pb-20 md:px-8 lg:px-16 ${poppins.className}`}
     >
       <div className='grid grid-cols-1 grid-rows-[repeat(5_,_auto)] gap-6 sm:grid-cols-2 lg:grid-cols-3'>
         {getData.slice(0, 3).map(project => (

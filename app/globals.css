@@ -32,11 +32,14 @@ form .form-row .textarea {
   height: 100%;
   border: none;
   font-size: 17px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 2px solid #23303c;
   outline: none;
   background-color: transparent;
 }
-
+.input-data input:is(.dark *),
+.textarea textarea:is(.dark *) {
+  border-bottom: 2px solid #fdfdfd;
+}
 .input-data input:focus ~ label,
 .input-data input:valid ~ label,
 .textarea textarea:valid ~ label,

@@ -116,17 +116,28 @@ const About = () => {
       initial='hidden'
       animate={controls}
     >
-      <HeadingSection text='About Me' variants={childVariants} />
-      <Heading text='Who am I?' variants={childVariant2} />
+      <HeadingSection
+        text='About Me'
+        className='hidden md:inline-block'
+        variants={childVariants}
+      />
+      <Heading
+        text='Who am I?'
+        className='text-center md:text-left'
+        variants={childVariant2}
+      />
       <Paragraph
+        className='text-pretty text-left md:text-left'
         text="I'm Nafis Mahmud Ayon, a passionate Frontend Web Developer with 4 years of experience in building responsive, high-quality websites that prioritize user experience. My expertise lies in crafting visually appealing and intuitive interfaces with a strong emphasis on UI/UX design. I enjoy turning complex problems into simple, beautiful, and engaging solutions."
         variants={paraVariant1}
       />
       <Paragraph
+        className='text-pretty text-left md:text-left'
         text="I thrive on the challenge of staying up-to-date with the latest technologies and best practices in the industry, ensuring that every project I work on is not only functional but also cutting-edge. Whether it's creating a mobile-first design, optimizing performance, or ensuring cross-browser compatibility, I'm committed to delivering the best possible outcome for every client."
         variants={paraVariant2}
       />
       <Paragraph
+        className='text-pretty text-left md:text-left'
         text=" When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or sharing my knowledge with the developer community."
         variants={paraVariant3}
       />

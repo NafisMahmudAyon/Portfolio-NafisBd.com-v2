@@ -15,12 +15,12 @@ const Paragraph: React.FC<ParagraphProps> = ({
   variants
 }) => {
   return (
-    <motion.h2
-      className={`${className} ${poppins.className} text-ba my-3 text-base font-medium text-normalText dark:text-normalDarkText`}
+    <motion.p
+      className={`${className} ${poppins.className} text-ba my-3 text-base font-normal text-normalText dark:text-normalDarkText md:font-medium`}
       variants={variants}
     >
       {text}
-    </motion.h2>
+    </motion.p>
   )
 }
 

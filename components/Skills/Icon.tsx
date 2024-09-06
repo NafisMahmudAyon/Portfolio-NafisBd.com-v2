@@ -8,17 +8,19 @@ interface iconProps {
   className?: string
   icon?: React.ReactNode
   progress?: number
-  initialAnimation?: 'top' | 'bottom'
+  initialAnimation?: 'top' | 'bottom' | string
   text?: string
   variants?: Variants
+  progressStyle?: string
 }
 
 const Icon: React.FC<iconProps> = ({
-  className,
+  className = '',
   icon,
   progress,
   text,
-  variants
+  variants,
+  progressStyle = ''
 }) => {
   const [isHovered, setIsHovered] = useState(false)
 
@@ -35,7 +37,7 @@ const Icon: React.FC<iconProps> = ({
       </span>
       {isHovered && (
         <motion.div
-          className='absolute -top-2/3 left-1/2 flex w-48 !-translate-x-1/2 -translate-y-1/2 flex-col items-start justify-center rounded-lg border border-primaryColor bg-primaryColor bg-opacity-30 px-4 py-2 backdrop-blur-sm'
+          className={`absolute -top-2/3 flex w-48 -translate-y-1/2 flex-col items-start justify-center rounded-lg border border-primaryColor bg-primaryColor bg-opacity-30 px-4 py-2 backdrop-blur-sm lg:!left-1/2 lg:right-auto lg:!-translate-x-1/2 ${progressStyle}`}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}

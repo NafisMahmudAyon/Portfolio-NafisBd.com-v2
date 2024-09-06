@@ -3,6 +3,7 @@
 import AboutMe from '@/components/AboutMe/AboutMe'
 import CallToAction from '@/components/CallToAction/CallToAction'
 import Experience from '@/components/Experience/Experience'
+import Footer from '@/components/Footer/Footer'
 import HeroSection from '@/components/Header/HeroSection'
 import Projects from '@/components/Projects/Projects'
 import Skills from '@/components/Skills/Skills'
@@ -53,12 +54,13 @@ export default function Home() {
   return (
     <main className='w-full'>
       <HeroSection />
-      <div className='mx-auto max-w-[1440px] bg-[#f1f6fa] py-36 shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#272727]'>
+      <div className='mx-auto mb-4 max-w-[1440px] rounded-b-3xl bg-[#f1f6fa] pt-36 shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#272727]'>
         <AboutMe />
         <Skills />
         <Projects />
         <Experience />
         <CallToAction />
+        <Footer />
       </div>
     </main>
   )

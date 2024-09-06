@@ -11,6 +11,7 @@ import {
   TwitterIcon,
   WhatsAppIcon
 } from '../Icons'
+import HeadingSection from '../HeadingSection'
 
 const Profile = () => {
   const spring = {
@@ -20,7 +21,8 @@ const Profile = () => {
     ease: 'easeInOut'
   }
   return (
-    <div className='relative'>
+    <div className='relative mb-16 flex flex-col items-center lg:mb-0'>
+      <HeadingSection text='About Me' className='mx-auto mb-8 md:hidden' />
       <motion.div
         className='mx-auto aspect-square w-[260px] overflow-hidden rounded-full border border-primaryColor drop-shadow-lg'
         initial={{ x: -100, opacity: 0 }}

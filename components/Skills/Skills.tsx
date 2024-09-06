@@ -61,12 +61,12 @@ const Skills = () => {
       initial='hidden'
       animate={controls}
       id='skills'
-      className='grid place-items-center px-16 py-36'
+      className='grid place-items-center px-4 py-6 md:px-8 md:py-10 lg:px-16 lg:py-36'
     >
       <HeadingSection text='Skills' variants={childVariants} />
       <Heading
         text='The skills, tools and technologies'
-        className='mb-0 mt-6'
+        className='mb-0 mt-6 text-center'
         variants={childVariants1}
       />
       <Heading

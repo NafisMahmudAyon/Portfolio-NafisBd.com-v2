@@ -1,6 +1,6 @@
 'use client'
 
-import { UseThemeSwitcher } from 'landing-page-ui'
+import { UseThemeSwitcher } from '../UseThemeSwitcher'
 import React from 'react'
 import { MoonIcon, SunIcon } from '../Icons'
 

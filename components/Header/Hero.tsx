@@ -13,10 +13,10 @@ const Hero = () => {
     ease: 'easeInOut'
   }
   return (
-    <div className='mt-20 grid min-h-[600px] grid-cols-2 content-center gap-6 justify-self-center px-16'>
-      <div className='grid content-center'>
+    <div className='mt-4 grid min-h-[600px] content-center gap-6 justify-self-center px-4 md:mt-10 md:grid-cols-2 md:px-8 lg:mt-20 lg:px-16'>
+      <div className='row-start-2 grid content-center md:row-start-1'>
         <motion.h2
-          className='text-2xl text-headingText dark:text-headingDarkText'
+          className='text-center text-2xl text-headingText dark:text-headingDarkText md:text-left'
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={spring}
@@ -24,7 +24,7 @@ const Hero = () => {
           Hi, I&apos;m
         </motion.h2>
         <motion.h1
-          className='text-4xl font-medium text-headingText dark:text-headingDarkText'
+          className='text-center text-4xl font-medium text-headingText dark:text-headingDarkText md:text-left'
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ...spring, delay: 0.1 }}
@@ -32,7 +32,7 @@ const Hero = () => {
           Nafis Mahmud Ayon
         </motion.h1>
         <motion.p
-          className='mt-4 text-pretty text-lg font-normal text-normalText dark:text-normalDarkText'
+          className='mt-4 text-pretty text-center text-lg font-normal text-normalText dark:text-normalDarkText md:text-left'
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ ...spring, delay: 0.4 }}
@@ -50,16 +50,8 @@ const Hero = () => {
         </motion.p>
       </div>
       <div className='grid place-items-center'>
-        {/* <div className='relative '> */}
-        {/* <motion.img src="/public/profilePic.png" alt="NafisBD" className="w-[400px] h-auto rounded-2xl drop-shadow-lg"/> */}
-        {/* <motion.img src={ProfilePic} alt="NafisBD" className="w-[400px] h-auto rounded-2xl drop-shadow-lg"/> */}
-        {/* // priority
-          // sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' */}
-
-        {/* <span className='bg-white-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-4 py-1 absolute top-1/2 border-2 border-primaryColor/35 -left-8 '>Hello</span> */}
-        {/* </div> */}
         <motion.div
-          className='h-auto w-[400px] rounded-2xl border border-primaryColor/25 drop-shadow-lg'
+          className='aspect-square w-[90%] overflow-hidden rounded-2xl border border-primaryColor/25 drop-shadow-lg md:h-auto md:max-w-[400px]'
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ ...spring, delay: 0.2 }}

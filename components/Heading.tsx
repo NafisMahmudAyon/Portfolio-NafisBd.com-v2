@@ -16,7 +16,7 @@ const Heading: React.FC<HeadingProps> = ({
 }) => {
   return (
     <motion.h2
-      className={`${className} ${poppins.className} my-6 text-2xl font-medium text-primaryColor`}
+      className={`${className} ${poppins.className} my-6 text-xl font-medium text-primaryColor md:text-2xl`}
       variants={variants}
     >
       {text}
