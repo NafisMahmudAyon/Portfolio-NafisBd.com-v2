@@ -52,7 +52,7 @@ export default function Home() {
   // }
 
   return (
-    <main className='w-full'>
+    <main className='w-full overflow-hidden'>
       <HeroSection />
       <div className='mx-auto mb-4 max-w-[1440px] rounded-b-3xl bg-[#f1f6fa] pt-36 shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#272727]'>
         <AboutMe />
