@@ -1,6 +1,14 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { oswald } from './fonts'
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f1f5f9' },
+    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
+  ],
+}
 
 export const metadata: Metadata = {
   title: 'Create Next App',
