@@ -36,7 +36,8 @@
     "build:lib:esm": "tsc -p tsconfig.lib.json --module esnext --declaration --outDir ./lib/esm",
     "lint": "eslint app --ext ts,tsx,js,jsx,cjs --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint app --ext js,jsx,ts,tsx,cjs --fix",
-    "format": "prettier --write 'app/**/*.{js,jsx,ts,tsx,css,html}'"
+    "format": "prettier --write 'app/**/*.{js,jsx,ts,tsx,css,html}'",
+    "postbuild": "next-sitemap --config next-sitemap.config.mjs"
   },
   "repository": {
     "type": "git",
@@ -59,12 +60,13 @@
     "@heroicons/react": "^2.2.0",
     "@supabase/supabase-js": "^2.45.2",
     "@types/dompurify": "^3.0.5",
-    "aspect-ui": "^0.0.55",
+    "aspect-ui": "^0.0.64",
     "blog-x-ui": "^0.0.8",
     "clsx": "^2.1.1",
     "dompurify": "^3.1.6",
     "framer-motion": "^11.3.30",
     "next": "15.0.4",
+    "next-sitemap": "^4.2.3",
     "nexus-accordion": "^0.0.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

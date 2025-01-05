@@ -189,6 +189,92 @@
     ]
   },
   {
+    "id": 3,
+    "created_at": "2024-08-30T14:38:08.32+00:00",
+    "title": "Advanced Infinite Scroll",
+    "slug": "advanced-infinite-scroll",
+    "short_description": "Advanced Infinite Scroll is a React component library that provides versatile and customizable infinite scrolling capabilities. It allows seamless content loading and offers multiple configuration options, including scrolling direction, speed, and hover-paused behavior.",
+    "project_type": [
+      "Web Development",
+      "UI Component"
+    ],
+    "project_status": "C",
+    "date_started": "2024-07-01",
+    "date_complete": null,
+    "tech_use": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "NextJS"
+    ],
+    "project_url": "https://advanced-infinite-scroll.vercel.app/",
+    "role": "Author",
+    "client_name": "",
+    "client_feedback": "",
+    "key_features": [
+      {
+        "title": "Multiple Scrolling Directions",
+        "desc": "Supports both horizontal and vertical scrolling directions, offering flexibility in layout design."
+      },
+      {
+        "title": "Hover-Paused Scrolling",
+        "desc": "Allows pausing the scroll animation when the user hovers over the content, enhancing user interaction."
+      },
+      {
+        "title": "Adjustable Scrolling Speed",
+        "desc": "Configurable scrolling speed, enabling smooth or fast transitions based on user preference."
+      },
+      {
+        "title": "Versatile Content Integration",
+        "desc": "Easily integrate with various content types, such as images, links, and text."
+      },
+      {
+        "title": "Performance Optimized",
+        "desc": "Optimized for performance, ensuring smooth scrolling even with large datasets."
+      },
+      {
+        "title": "Responsive Design",
+        "desc": "Built-in responsive design, ensuring the component adapts to different screen sizes and devices."
+      }
+    ],
+    "challenges_faced": "",
+    "lessons_learned": "",
+    "team_size": 1,
+    "collaborators": [],
+    "project_images": [],
+    "project_videos": [],
+    "documentation_links": [
+      "https://advanced-infinite-scroll.vercel.app/"
+    ],
+    "github_repo": "https://github.com/NafisMahmudAyon/advanced-infinite-scroll",
+    "downloadable_resources": [],
+    "updated_at": "2024-08-30T14:38:08.32",
+    "tags": [
+      "react",
+      "infinite-scroll",
+      "ui-library",
+      "web-development",
+      "components",
+      "responsive",
+      "performance",
+      "scroll-animation"
+    ],
+    "views_count": null,
+    "likes": null,
+    "comments": null,
+    "description": [
+      "\"Advanced Infinite Scroll is a React component library designed to provide versatile and customizable infinite scrolling capabilities.\"",
+      "\"It allows seamless content loading and offers multiple configuration options",
+      "including scrolling direction",
+      "speed",
+      "and hover-paused behavior.\"",
+      "\"Built with performance in mind",
+      "Advanced Infinite Scroll ensures smooth scrolling even with large datasets.\""
+    ]
+  },
+  {
     "id": 4,
     "created_at": "2024-08-31T02:00:45.158+00:00",
     "title": "Aspect UI",

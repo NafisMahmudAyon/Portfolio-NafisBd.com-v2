@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nafisbd.com
+
+# Sitemaps
+Sitemap: https://nafisbd.com/sitemap.xml

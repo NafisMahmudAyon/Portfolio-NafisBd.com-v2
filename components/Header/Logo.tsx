@@ -6,7 +6,7 @@ const Logo = () => {
     <h1
       className={`text-xl font-semibold tracking-wide text-headingText dark:text-headingDarkText ${poppins.className}`}
     >
-      <a href='#home'>
+      <a href='/#home'>
         <span className='text-primaryColor'>N</span>afis
         <span className='text-primaryColor'>BD</span>
       </a>
