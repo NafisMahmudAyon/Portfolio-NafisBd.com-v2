@@ -4,6 +4,7 @@ import { BackToTop } from 'aspect-ui/BackToTop'
 import type { Metadata } from 'next'
 import { oswald } from './fonts'
 import './globals.css'
+import PageLoader from '@/components/PageLoader'
 
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={` ${oswald.className} bg-[#f1f6fb] dark:bg-[#262626]`}>
+        <PageLoader />
         <Cursor />
         {children}
         <BackToTop className="p-2 border border-primaryColor bg-primaryColor bg-opacity-10

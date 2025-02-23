@@ -6,6 +6,7 @@ import { motion, useAnimation, useInView } from 'framer-motion'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
 import { GithubIcon, LinkIcon } from '../Icons'
+import Link from 'next/link'
 
 export interface Project {
   id: number
@@ -160,9 +161,9 @@ const ProjectsGrid: React.FC = () => {
         ))}
       </div>
       <div className='flex justify-center pt-10'>
-        <a href="/projects" className='flex w-[260px] flex-col items-center justify-center rounded-lg border border-primaryColor bg-primaryColor bg-opacity-10 px-4 py-2 text-center text-primaryColor backdrop-blur-xl'>
+        <Link href="/projects" className='flex w-[260px] flex-col items-center justify-center rounded-lg border border-primaryColor bg-primaryColor bg-opacity-10 px-4 py-2 text-center text-primaryColor backdrop-blur-xl'>
           See More Projects
-        </a>
+        </Link>
       </div>
     </motion.div>
   )

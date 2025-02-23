@@ -244,7 +244,9 @@
     "lessons_learned": "",
     "team_size": 1,
     "collaborators": [],
-    "project_images": [],
+    "project_images": [
+      "/aspect-ui-logo.png"
+    ],
     "project_videos": [],
     "documentation_links": [
       "https://advanced-image-carousel.vercel.app/"

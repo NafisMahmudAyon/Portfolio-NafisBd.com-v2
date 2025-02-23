@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 interface NavItemProps {
   text: string
@@ -17,27 +18,29 @@ const NavItem: React.FC<NavItemProps> = ({
   href,
   target
 }) => {
-  const handleClick = (event: React.MouseEvent<HTMLLIElement>) => {
-    event.preventDefault()
+  // const handleClick = (event: React.MouseEvent<HTMLLIElement>) => {
+  //   event.preventDefault()
 
-    if (href) {
-      if (target === '_blank') {
-        window.open(href, '_blank')
-      } else {
-        window.location.href = href
-      }
-    }
-  }
+  //   if (href) {
+  //     if (target === '_blank') {
+  //       window.open(href, '_blank')
+  //     } else {
+  //       window.location.href = href
+  //     }
+  //   }
+  // }
 
   return (
     <motion.li
       className={`${className} ${active ? 'text-headingText underline underline-offset-4 dark:text-headingDarkText' : 'text-normalText underline-offset-4 hover:text-headingText hover:underline hover:underline-offset-4 dark:text-normalDarkText dark:hover:text-headingDarkText'}`}
-      onClick={handleClick}
+      // onClick={handleClick}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       transition={{ duration: 0.2 }}
     >
-      {text}
+      <Link href={href??"/"} target={target}>
+        {text}
+      </Link>
     </motion.li>
   )
 }
