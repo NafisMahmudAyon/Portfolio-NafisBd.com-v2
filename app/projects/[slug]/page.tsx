@@ -1,14 +1,10 @@
-import { code, poppins } from '@/app/fonts';
 import BlogNav from '@/components/BlogNav';
 import Footer from '@/components/Footer/Footer';
-import NavBar from '@/components/NavBar';
+import MarkdownContent from '@/components/MarkdownContent';
 import PageTitle from '@/components/PageTitle';
 import data from '@/public/project-data.json';
 import { Breadcrumb, BreadcrumbItem } from 'aspect-ui/Breadcrumb';
-import "highlight.js/styles/atom-one-dark.css";
 import Link from 'next/link';
-import ReactMarkdown from "react-markdown";
-import rehypeHighlight from 'rehype-highlight';
 
 export default async function Page({
   params,
@@ -24,7 +20,7 @@ export default async function Page({
         id="home"
         className="mx-auto mt-4 w-full rounded-t-3xl background bg-[#f1f6fb] pb-12 pt-6 shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#262626] lg:max-w-[1440px]"
       >
-        <NavBar />
+        {/* <NavBar /> */}
         <PageTitle
           title={getData[0].title}
           className="text-wrap px-3 flex justify-center w-full text-2xl"
@@ -41,12 +37,10 @@ export default async function Page({
           <BreadcrumbItem className="">{getData[0].title}</BreadcrumbItem>
         </Breadcrumb>
 
-        <ReactMarkdown
-          className={`blog ${code.variable} ${poppins.variable} mb-4 md:mb-6 lg:mb-10`}
-          rehypePlugins={[rehypeHighlight]}
-        >
-          {getData[0].blog}
-        </ReactMarkdown>
+        <MarkdownContent
+          content={getData[0].blog}
+          className="mb-4 md:mb-6 lg:mb-10"
+        />
         <BlogNav id={getData[0].id} />
         <Footer />
       </div>
