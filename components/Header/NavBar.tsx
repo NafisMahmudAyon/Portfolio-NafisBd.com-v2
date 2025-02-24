@@ -7,8 +7,8 @@ import NavMenu from './NavMenu'
 const NavBar = () => {
   const [openMenu, setopenMenu] = useState(false)
   return (
-    <div>
-      <div className='mx-auto hidden w-[90%] items-center gap-6 rounded-lg border border-normalText/25 px-4 py-3 dark:border-normalDarkText/25 lg:flex'>
+    <div className=''>
+      <div className='mx-auto hidden w-[90%] items-center gap-6 rounded-lg border border-normalText/25 px-4 py-3 dark:border-normalDarkText/25 lg:flex backdrop-blur-md'>
         <Logo />
         <NavMenu />
       </div>

@@ -34,7 +34,7 @@ const Profile = () => {
         <Image
           src={ProfilePic}
           alt='NafisBD'
-          layout='responsive'
+          // layout='responsive'
           width={400}
           height={400}
           className='rounded-2xl'

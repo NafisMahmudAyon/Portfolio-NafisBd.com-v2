@@ -6,6 +6,7 @@ import PageTitle from '@/components/PageTitle';
 import data from '@/public/project-data.json';
 import { Breadcrumb, BreadcrumbItem } from 'aspect-ui/Breadcrumb';
 import "highlight.js/styles/atom-one-dark.css";
+import Link from 'next/link';
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from 'rehype-highlight';
 
@@ -32,10 +33,10 @@ export default async function Page({
       <div className="mx-auto mb-4 max-w-[1440px] px-3 md:px-4 lg:px-10 rounded-b-3xl bg-[#f1f6fa] shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#272727]">
         <Breadcrumb className="py-10 px-0 flex-wrap gap-2 md:gap-3 " separatorClassName="">
           <BreadcrumbItem>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <a href="/projects">Projects</a>
+            <Link href="/projects">Projects</Link>
           </BreadcrumbItem>
           <BreadcrumbItem className="">{getData[0].title}</BreadcrumbItem>
         </Breadcrumb>
