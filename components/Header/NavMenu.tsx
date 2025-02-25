@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import NavItem from './NavItem'
 import DarkMode from './DarkMode'

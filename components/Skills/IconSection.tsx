@@ -1,8 +1,6 @@
 'use client'
+import { motion, useAnimation, useInView } from 'framer-motion'
 import React, { useRef } from 'react'
-import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import Icon from './Icon'
 import {
   CSSIcon,
   ExpressIcon,
@@ -24,6 +22,7 @@ import {
   VercelIcon,
   VSCodeIcon
 } from '../Icons'
+import Icon from './Icon'
 
 import { oswald } from '@/app/fonts'
 
@@ -83,56 +82,56 @@ const IconSection = () => {
               {
                 icon: <HTMLIcon className='aspect-square w-10' />,
                 text: 'HTML',
-                progress: 60,
+                progress: 100,
                 initialAnimation: 'bottom',
                 progressStyle: ''
               },
               {
                 icon: <CSSIcon className='aspect-square w-10' />,
                 text: 'CSS',
-                progress: 60,
+                progress: 100,
                 initialAnimation: 'bottom',
                 progressStyle: ''
               },
               {
                 icon: <JSIcon className='aspect-square w-10' />,
                 text: 'JS',
-                progress: 60,
+                progress: 90,
                 initialAnimation: 'bottom',
                 progressStyle: ''
               },
               {
                 icon: <TSIcon className='aspect-square w-10' />,
                 text: 'TS',
-                progress: 60,
+                progress: 80,
                 initialAnimation: 'bottom',
                 progressStyle: ''
               },
               {
                 icon: <PHPIcon className='aspect-square w-10' />,
                 text: 'PHP',
-                progress: 60,
+                progress: 80,
                 initialAnimation: 'bottom',
                 progressStyle: ''
               },
               {
                 icon: <TailwindIcon className='aspect-square w-10' />,
                 text: 'Tailwind',
-                progress: 60,
+                progress: 100,
                 initialAnimation: 'bottom',
                 progressStyle: ''
               },
               {
                 icon: <ReactIcon className='aspect-square w-10' />,
                 text: 'React',
-                progress: 60,
+                progress: 90,
                 initialAnimation: 'bottom',
                 progressStyle: ''
               },
               {
                 icon: <NextJSIcon className='aspect-square w-10' />,
                 text: 'Next.js',
-                progress: 60,
+                progress: 90,
                 initialAnimation: 'top',
                 progressStyle: ''
               }
@@ -151,66 +150,6 @@ const IconSection = () => {
               )
             })}
           </div>
-
-          {/* <div className='lg:flex lg:flex-wrap gap-5 grid grid-cols-5 '>
-            <Icon
-              initialAnimation='bottom'
-              icon={<HTMLIcon className='aspect-square w-10' />}
-              progress={60}
-              text='HTML'
-              progressStyle='!left-0 !translate-x-0'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<CSSIcon className='aspect-square w-10' />}
-              progress={60}
-              text='CSS'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<JSIcon className='aspect-square w-10' />}
-              progress={60}
-              text='JS'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<TSIcon className='aspect-square w-10' />}
-              progress={60}
-              text='TS'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<PHPIcon className='aspect-square w-10' />}
-              progress={60}
-              text='PHP'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<TailwindIcon className='aspect-square w-10' />}
-              progress={60}
-              text='Tailwind'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<ReactIcon className='aspect-square w-10' />}
-              progress={60}
-              text='React'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='top'
-              icon={<NextJSIcon className='aspect-square w-10' />}
-              progress={60}
-              text='Next.js'
-              variants={iconVariants}
-            />
-          </div> */}
         </div>
         <div className='flex flex-col items-center justify-center'>
           <span className='pb-5 text-primaryColor'>Back End</span>
@@ -219,22 +158,22 @@ const IconSection = () => {
               {
                 icon: <NodeIcon className='aspect-square w-10' />,
                 text: 'Node',
-                progress: 60
+                progress: 80
               },
               {
                 icon: <ExpressIcon className='aspect-square w-10' />,
                 text: 'Express',
-                progress: 60
+                progress: 70
               },
               {
                 icon: <MySQLIcon className='aspect-square w-10' />,
                 text: 'MySQL',
-                progress: 60
+                progress: 70
               },
               {
                 icon: <PostgreSQLIcon className='aspect-square w-10' />,
                 text: 'PostgreSQL',
-                progress: 60
+                progress: 80
               },
               {
                 icon: <MongoDBIcon className='aspect-square w-10' />,
@@ -256,43 +195,6 @@ const IconSection = () => {
               )
             })}
           </div>
-          {/* <div className='flex flex-wrap gap-5'>
-            <Icon
-              initialAnimation='bottom'
-              icon={<NodeIcon className='aspect-square w-10' />}
-              progress={60}
-              text='Node'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<ExpressIcon className='aspect-square w-10' />}
-              progress={60}
-              text='Express'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<MySQLIcon className='aspect-square w-10' />}
-              progress={60}
-              text='MySQL'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<PostgreSQLIcon className='aspect-square w-10' />}
-              progress={60}
-              text='PostgreSQL'
-              variants={iconVariants}
-            />
-            <Icon
-              initialAnimation='bottom'
-              icon={<MongoDBIcon className='aspect-square w-10' />}
-              progress={60}
-              text='MongoDB'
-              variants={iconVariants}
-            />
-          </div> */}
         </div>
       </div>
       <div className='flex flex-col items-center justify-center'>
@@ -302,12 +204,12 @@ const IconSection = () => {
             {
               icon: <GitIcon className='aspect-square w-10' />,
               text: 'Git',
-              progress: 60
+              progress: 90
             },
             {
               icon: <GitHubIcon className='aspect-square w-10' />,
               text: 'GitHub',
-              progress: 60
+              progress: 90
             },
             {
               icon: <NetlifyIcon className='aspect-square w-10' />,
@@ -344,50 +246,6 @@ const IconSection = () => {
             )
           })}
         </div>
-        {/* <div className='flex flex-wrap gap-5'>
-          <Icon
-            initialAnimation='top'
-            icon={<GitIcon className='aspect-square w-10' />}
-            progress={60}
-            text='Git'
-            variants={iconVariants}
-          />
-          <Icon
-            initialAnimation='top'
-            icon={<GitHubIcon className='aspect-square w-10' />}
-            progress={60}
-            text='GitHub'
-            variants={iconVariants}
-          />
-          <Icon
-            initialAnimation='top'
-            icon={<NetlifyIcon className='aspect-square w-10' />}
-            progress={90}
-            text='Netlify'
-            variants={iconVariants}
-          />
-          <Icon
-            initialAnimation='top'
-            icon={<VercelIcon className='aspect-square w-10' />}
-            progress={90}
-            text='Vercel'
-            variants={iconVariants}
-          />
-          <Icon
-            initialAnimation='top'
-            icon={<FigmaIcon className='aspect-square w-10' />}
-            progress={90}
-            text='VS Code'
-            variants={iconVariants}
-          />
-          <Icon
-            initialAnimation='top'
-            icon={<VSCodeIcon className='aspect-square w-10' />}
-            progress={90}
-            text='Figma'
-            variants={iconVariants}
-          />
-        </div> */}
       </div>
     </motion.div>
   )

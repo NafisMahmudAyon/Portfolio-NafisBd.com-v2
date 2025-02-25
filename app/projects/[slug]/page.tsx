@@ -1,6 +1,8 @@
+
 import BlogNav from '@/components/BlogNav';
 import Footer from '@/components/Footer/Footer';
 import MarkdownContent from '@/components/MarkdownContent';
+import NavBar from '@/components/NavBar';
 import PageTitle from '@/components/PageTitle';
 import data from '@/public/project-data.json';
 import { Breadcrumb, BreadcrumbItem } from 'aspect-ui/Breadcrumb';
@@ -23,7 +25,7 @@ export default async function Page({
         {/* <NavBar /> */}
         <PageTitle
           title={getData[0].title}
-          className="text-wrap px-3 flex justify-center w-full text-2xl"
+          className="text-wrap pt-10 px-3 flex justify-center w-full text-2xl"
         />
       </div>
       <div className="mx-auto mb-4 max-w-[1440px] px-3 md:px-4 lg:px-10 rounded-b-3xl bg-[#f1f6fa] shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#272727]">

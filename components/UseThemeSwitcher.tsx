@@ -7,29 +7,26 @@ export const UseThemeSwitcher = (): [
   React.Dispatch<React.SetStateAction<string>>
 ] => {
   const preferDarkQuery = '(prefers-color-scheme: dark)'
-  const [mode, setMode] = useState<string>('')
+  const [mode, setMode] = useState<string>(() => {
+    return 'light' // Provide a safe default during SSR
+  })
+
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia(preferDarkQuery)
-    const userPref = window.localStorage.getItem('theme')
+    setIsMounted(true)
 
-    const handleChange = () => {
-      const userTheme = userPref || (mediaQuery.matches ? 'dark' : 'light')
-      setMode(userTheme)
-      document.documentElement.classList.toggle('dark', userTheme === 'dark')
-    }
-
-    handleChange()
-
-    mediaQuery.addEventListener('change', handleChange)
-
-    return () => mediaQuery.removeEventListener('change', handleChange)
+    const savedTheme = window.localStorage.getItem('theme')
+    const systemTheme = window.matchMedia(preferDarkQuery).matches ? 'dark' : 'light'
+    setMode(savedTheme || systemTheme)
   }, [])
 
   useEffect(() => {
+    if (!isMounted) return
     window.localStorage.setItem('theme', mode)
-    document.documentElement.classList.toggle('dark', mode === 'dark')
-  }, [mode])
+    document.documentElement.classList.remove('light', 'dark')
+    document.documentElement.classList.add(mode)
+  }, [mode, isMounted])
 
   return [mode, setMode]
 }

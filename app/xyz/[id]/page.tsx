@@ -38,7 +38,6 @@ const UpdateProjectForm: React.FC = () => {
   const router = useRouter()
   const params = useParams<{ id: string }>()
   const id = params.id
-  console.log(id)
 
   const [formData, setFormData] = useState<FormData>({
     title: '',
@@ -160,7 +159,7 @@ const UpdateProjectForm: React.FC = () => {
       console.error('Error updating data:', error)
     } else {
       console.log('Data updated successfully:', data)
-      router.push('/xxx') // Redirect to the projects list page after successful update
+      router.push('/xyz') // Redirect to the projects list page after successful update
     }
   }
 
