@@ -2,7 +2,6 @@
 import BlogNav from '@/components/BlogNav';
 import Footer from '@/components/Footer/Footer';
 import MarkdownContent from '@/components/MarkdownContent';
-import NavBar from '@/components/NavBar';
 import PageTitle from '@/components/PageTitle';
 import data from '@/public/project-data.json';
 import { Breadcrumb, BreadcrumbItem } from 'aspect-ui/Breadcrumb';
