@@ -4,9 +4,9 @@ import { poppins } from '@/app/fonts'
 import data from '@/public/project-data.json'
 import { motion, useAnimation, useInView } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useEffect, useRef } from 'react'
 import { GithubIcon, LinkIcon } from '../Icons'
-import Link from 'next/link'
 
 export interface Project {
   id: number
@@ -145,17 +145,17 @@ const ProjectsGrid: React.FC = () => {
               ))}
             </div>
             <div className='flex justify-between px-4 pb-4 pt-4 text-xs font-extralight text-headingText dark:text-headingDarkText'>
-              <a href={project.project_url} className='flex relative z-50 items-center gap-1'>
+              <a href={project.project_url} target='_blank' className='flex relative z-50 items-center gap-1'>
                 <LinkIcon className='h-3' />
                 Live Preview
               </a>
-              <a
-                href={project.github_repo || '#'}
+              {project.github_repo && <a
+                href={project.github_repo || '#'} target='_blank'
                 className='flex items-center relative z-50 gap-2'
               >
                 <GithubIcon className='w-5 text-normalText dark:text-normalDarkText' />{' '}
                 View Code
-              </a>
+              </a>}
             </div>
           </motion.div>
         ))}

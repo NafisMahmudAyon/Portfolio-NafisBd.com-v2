@@ -277,5 +277,249 @@
       "The component is optimized for performance and can be tailored to fit specific design needs",
       "making it a versatile addition to any project."
     ]
+  },
+  {
+    "id": 4,
+    "created_at": "2025-02-28T00:00:00.000+00:00",
+    "title": "ComboBlocks",
+    "slug": "comboblocks",
+    "short_description": "ComboBlocks is a Gutenberg blocks library for WordPress, designed to enhance the block editor with a collection of powerful and customizable blocks. It enables users to create visually appealing and dynamic content with ease.",
+    "project_type": [
+      "WordPress Development",
+      "Gutenberg Blocks"
+    ],
+    "project_status": "Completed",
+    "date_started": "2023-01-01",
+    "date_complete": "2024-06-30",
+    "tech_use": [
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "React",
+      "Gutenberg",
+      "CSS"
+    ],
+    "project_url": "https://comboblocks.com/",
+    "role": "Contributor",
+    "client_name": "",
+    "client_feedback": "",
+    "key_features": [
+      {
+        "title": "Custom Gutenberg Blocks",
+        "desc": "Provides a variety of custom blocks for enhanced WordPress editing capabilities."
+      },
+      {
+        "title": "Advanced Styling Options",
+        "desc": "Offers extensive styling controls to match any design needs."
+      },
+      {
+        "title": "Responsive and Mobile-Friendly",
+        "desc": "Ensures content looks great on all devices with responsive settings."
+      },
+      {
+        "title": "Performance Optimized",
+        "desc": "Built with efficiency in mind to keep websites fast and lightweight."
+      },
+      {
+        "title": "Drag-and-Drop Editing",
+        "desc": "Seamlessly integrates with the WordPress block editor for an intuitive editing experience."
+      },
+      {
+        "title": "Regular Updates & Support",
+        "desc": "Actively maintained with frequent updates and community support."
+      }
+    ],
+    "blog": "# ComboBlocks: A Feature-Rich Gutenberg Block Library for WordPress\n\nGutenberg, WordPress' block editor, has transformed content creation, and ComboBlocks takes it to the next level. Designed for flexibility and ease of use, ComboBlocks enhances WordPress websites by offering powerful, customizable blocks that improve design and functionality.\n\n---\n\n## What is ComboBlocks?\n\nComboBlocks is a collection of Gutenberg blocks crafted to provide a seamless content-building experience. With advanced customization options, responsive layouts, and a focus on performance, it empowers users to create stunning pages without writing code.\n\n---\n\n## Key Features\n\n- Diverse Block Collection: Includes content, layout, and media-focused blocks for various needs.\n- Customization Controls: Fine-tune block styles, colors, typography, and spacing.\n- Mobile Responsiveness: Ensures all blocks adapt beautifully across devices.\n- Performance First: Built with clean, efficient code to keep websites fast.\n- Drag-and-Drop Editing: A true WYSIWYG experience inside the block editor.\n- Frequent Updates: Regular improvements and new block additions.\n\n---\n\n## Included Blocks\n\n### Content Blocks\n- Advanced Heading: Stylized headings with custom fonts and animations.\n- Button Group: Multiple buttons with alignment and spacing controls.\n- Icon Box: Text with an accompanying icon for enhanced visual appeal.\n- Testimonial: Showcase customer reviews with elegant layouts.\n- Accordion: Collapsible content sections for FAQs and organized displays.\n\n### Layout & Grid Blocks\n- Container: A flexible wrapper for organizing content.\n- Columns Manager: Create multi-column layouts with ease.\n- Spacer/Divider: Adjust spacing between elements.\n\n### Media & Interactive Blocks\n- Image Gallery: Stylish galleries with lightbox support.\n- Video Embed: Responsive video embedding from various sources.\n- Tabs: Switchable content areas for organized sections.\n- Countdown Timer: Displays a live countdown for promotions and events.\n\n---\n\n## How to Get Started\n\n### Installation\n\nInstall ComboBlocks from the WordPress plugin repository or manually upload the plugin:Navigate to Plugins > Add New in your WordPress dashboard.Search for ComboBlocks.Click Install Now and then Activate.Example Usage\n\nOnce installed, simply add a new post or page, click Add Block (+), and select from the ComboBlocks library.---\n\n## Why Choose ComboBlocks?\n\n- User-Friendly: No coding required, making it accessible for all users.\n- Extensive Customization: Modify every aspect of a block to match your design.\n- Lightweight & Fast: Doesn't slow down your site.\n- SEO & Accessibility Friendly: Ensures better visibility and usability.\n\nWith ComboBlocks, WordPress users can create professional, engaging pages effortlessly.\n","challenges_faced": "",
+    "lessons_learned": "",
+    "team_size": 3,
+    "collaborators": [],
+    "project_images": [
+      "https://comboblocks.com/wp-content/uploads/2024/10/comboblocks-logo-1.png.webp"
+    ],
+    "project_videos": [],
+    "documentation_links": [
+      "https://wordpress.org/plugins/post-grid/"
+    ],
+    "github_repo": "",
+    "downloadable_resources": [],
+    "updated_at": "2025-02-28T00:00:00.000",
+    "tags": [
+      "wordpress",
+      "gutenberg",
+      "blocks",
+      "plugin",
+      "web-development",
+      "customization",
+      "drag-and-drop"
+    ],
+    "views_count": null,
+    "likes": null,
+    "comments": null,
+    "description": [
+      "ComboBlocks is a Gutenberg block library that enhances the WordPress editor with powerful, customizable blocks.",
+      "It provides an extensive range of content, layout, and media blocks to improve design and functionality.",
+      "With ComboBlocks, users can create visually stunning pages effortlessly while maintaining performance and SEO best practices."
+    ]
+  },
+  {
+    "id": 5,
+    "created_at": "2025-02-28T00:00:00.000+00:00",
+    "title": "Aspect Accordions - With Tailwind",
+    "slug": "aspect-accordions",
+    "short_description": "Aspect Accordions is a lightweight WordPress plugin that allows users to create stylish and customizable accordions using shortcodes and Tailwind CSS.",
+    "project_type": [
+      "WordPress Plugin",
+      "Shortcode-Based"
+    ],
+    "project_status": "In Progress",
+    "date_started": "2025-02-01",
+    "date_complete": null,
+    "tech_use": [
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "Tailwind CSS"
+    ],
+    "project_url": "https://wordpress.org/plugins/aspect-accordions/",
+    "role": "Author",
+    "client_name": "",
+    "client_feedback": "",
+    "key_features": [
+      {
+        "title": "Shortcode-Based",
+        "desc": "Easily add accordions anywhere using a simple shortcode."
+      },
+      {
+        "title": "Tailwind CSS Support",
+        "desc": "Leverages Tailwind CSS for modern and customizable styling."
+      },
+      {
+        "title": "Multiple Accordion Styles",
+        "desc": "Provides various layout and animation options for accordions."
+      },
+      {
+        "title": "SEO Friendly",
+        "desc": "Built with semantic HTML for better search engine optimization."
+      },
+      {
+        "title": "Lightweight and Fast",
+        "desc": "Optimized for performance, ensuring smooth user experience."
+      }
+    ],
+    "blog": "# Aspect Accordions: The Ultimate Shortcode-Based Accordion Plugin\n\n## Introduction\n\nAspect Accordions is a WordPress plugin designed to add stylish and customizable accordions to your website. It is built with Tailwind CSS, ensuring flexibility and a modern look.\n\n---\n\n## Key Features\n\n- **Shortcode-Based**: Easily insert accordions using `[aspect_accordion]` shortcode.\n- **Highly Customizable**: Modify colors, spacing, animations, and more with shortcode attributes.\n- **Lightweight & Fast**: Optimized for performance without unnecessary bloat.\n- **SEO-Friendly**: Uses semantic HTML and accessible ARIA attributes.\n- **Mobile Responsive**: Looks great on all screen sizes.\n\n---\n\n## Installation\n\n### From the WordPress Plugin Directory\n\n1. Navigate to **Plugins > Add New** in your WordPress dashboard.\n2. Search for **Aspect Accordions**.\n3. Click **Install Now** and then **Activate**.\n\n### Manual Installation\n\n1. Download the plugin ZIP file.\n2. Go to **Plugins > Add New > Upload Plugin**.\n3. Upload the ZIP file and activate the plugin.\n\n",
+    "challenges_faced": "",
+    "lessons_learned": "",
+    "team_size": 1,
+    "collaborators": [],
+    "project_images": [
+      "/aspect-ui-logo.png"
+    ],
+    "project_videos": [],
+    "documentation_links": [
+      "https://aspect-accordions-docs.vercel.app/"
+    ],
+    "github_repo": "https://github.com/NafisMahmudAyon/aspect-accordions",
+    "downloadable_resources": [],
+    "updated_at": "2025-02-28T00:00:00.000",
+    "tags": [
+      "wordpress",
+      "shortcode",
+      "plugin",
+      "tailwind-css",
+      "accordion",
+      "ui-library",
+      "responsive",
+      "customizable"
+    ],
+    "views_count": null,
+    "likes": null,
+    "comments": null,
+    "description": [
+      "Aspect Accordions is a powerful shortcode-based plugin for creating customizable accordion sections.",
+      "It supports Tailwind CSS, ensuring modern styling and flexibility.",
+      "Users can easily add interactive collapsible sections to their WordPress pages using shortcodes.",
+      "The plugin is lightweight and optimized for performance."
+    ]
+  },
+  {
+    "id": 6,
+    "created_at": "2025-02-28T00:00:00.000+00:00",
+    "title": "Accordion Editor",
+    "slug": "accordion-editor",
+    "short_description": "Accordion Editor is an interactive React-based accordion builder that allows users to create and customize accordions with a live preview.",
+    "project_type": [
+      "React Project",
+      "Web Application",
+      "UI Builder"
+    ],
+    "project_status": "Completed",
+    "date_started": "2025-01-15",
+    "date_complete": "2025-02-20",
+    "tech_use": [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Vite"
+    ],
+    "project_url": "https://accordion-editor.nafisbd.com/",
+    "role": "Developer",
+    "client_name": "",
+    "client_feedback": "",
+    "key_features": [
+      {
+        "title": "Live Preview",
+        "desc": "Users can instantly see changes while editing accordions."
+      },
+      {
+        "title": "Drag & Drop Support",
+        "desc": "Easily reorder accordion items using a drag-and-drop interface."
+      },
+      {
+        "title": "Customizable Styles",
+        "desc": "Modify colors, fonts, spacing, and more with Tailwind CSS."
+      },
+      {
+        "title": "Export as JSON",
+        "desc": "Save and load accordion configurations as JSON files."
+      },
+      {
+        "title": "Responsive Design",
+        "desc": "Ensures a seamless experience across all devices."
+      }
+    ],
+    "blog": "# Accordion Editor: A Powerful React-Based Accordion Builder\n\n## Overview\n\nAccordion Editor is a React-based tool designed to help users create, edit, and customize accordions with real-time preview capabilities. Built with Tailwind CSS and optimized for ease of use, it provides a smooth and intuitive experience.\n\n---\n\n## Features\n\n- **Live Preview**: See changes instantly while customizing.\n- **Drag & Drop Support**: Easily rearrange accordion items.\n- **Customizable Styles**: Modify colors, spacing, and more.\n- **JSON Export & Import**: Save and reload accordion configurations.\n- **Responsive & Fast**: Works seamlessly across all screen sizes.\n\n---\n\n## How to Use\n\n### 1. Create an Accordion\n- Click **Add Item** to insert a new accordion section.\n- Edit the title and content as needed.\n\n### 2. Customize the Style\n- Adjust colors, fonts, and spacing using the right sidebar.\n- Choose between different animation effects.\n\n### 3. Export & Reuse\n- Click **Export JSON** to save your configuration.\n- Import saved JSON files to reload previous settings.\n\n---\n\n## Tech Stack\n\n- **React** – Core framework for dynamic UI\n- **Tailwind CSS** – Styling for customization and responsiveness\n- **Vite** – Fast development environment\n- **Framer Motion** – Smooth animations\n\n---\n\n## Live Demo\n\nTry it out: [Accordion Editor](https://accordion-editor.nafisbd.com/)\n\n---\n\n## GitHub Repository\n\nExplore the source code: [GitHub Repo](https://github.com/NafisMahmudAyon/accordion-editor)\n",
+    "challenges_faced": "Ensuring smooth drag-and-drop functionality while maintaining performance.",
+    "lessons_learned": "Optimized state management and improved the responsiveness of UI components.",
+    "team_size": 1,
+    "collaborators": [],
+    "project_images": [
+      "/aspect-ui-logo.png"
+    ],
+    "project_videos": [],
+    "documentation_links": [
+      "https://github.com/NafisMahmudAyon/accordion-editor/wiki"
+    ],
+    "github_repo": "https://github.com/NafisMahmudAyon/accordion-editor",
+    "downloadable_resources": [],
+    "updated_at": "2025-02-28T00:00:00.000",
+    "tags": [
+      "react",
+      "accordion",
+      "ui-builder",
+      "tailwind-css",
+      "drag-drop",
+      "live-preview",
+      "json-export",
+      "responsive"
+    ],
+    "views_count": null,
+    "likes": null,
+    "comments": null,
+    "description": [
+      "Accordion Editor is a React-based accordion builder with a live preview.",
+      "It allows users to create, customize, and export accordion structures.",
+      "The editor features drag-and-drop functionality for easy item management.",
+      "Built with Tailwind CSS, ensuring modern and responsive design."
+    ]
   }
 ]

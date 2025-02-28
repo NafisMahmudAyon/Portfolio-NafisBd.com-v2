@@ -1,6 +1,5 @@
 'use client'
 import Footer from '@/components/Footer/Footer'
-import NavBar from '@/components/NavBar'
 import { GithubIcon, LinkIcon } from '@/components/Icons'
 import PageTitle from '@/components/PageTitle'
 import data from '@/public/project-data.json'
@@ -52,8 +51,9 @@ const PageData = () => {
         id='home'
         className='mx-auto mt-4 w-full rounded-t-3xl background bg-[#f1f6fb] pb-12 pt-6 shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#262626] lg:max-w-[1440px]'
       >
-        <NavBar />
-        <PageTitle title='Projects' />
+        {/* <NavBar /> */}
+        <PageTitle title='Projects' className="text-wrap pt-10 px-3 flex justify-center w-full text-2xl" />
+        
       </div>
       <div className='mx-auto mb-4 max-w-[1440px] rounded-b-3xl bg-[#f1f6fa] shadow shadow-normalText/25 drop-shadow-md backdrop-blur-3xl dark:bg-[#272727]'>
         <div className='px-4 md:px-8 lg:px-16'>
@@ -107,17 +107,17 @@ const PageData = () => {
                   ))}
                 </div>
                 <div className='flex justify-between px-4 pb-4 pt-4 text-xs font-extralight text-headingText dark:text-headingDarkText'>
-                  <a href={project.project_url} className='flex relative z-50 items-center gap-1'>
+                  <a href={project.project_url} target='_blank' className='flex relative z-50 items-center gap-1'>
                     <LinkIcon className='h-3' />
                     Live Preview
                   </a>
-                  <a
-                    href={project.github_repo || '#'}
+                  {project.github_repo && <a
+                    href={project.github_repo || '#'} target='_blank'
                     className='flex items-center relative z-50 gap-2'
                   >
                     <GithubIcon className='w-5 text-normalText dark:text-normalDarkText' />{' '}
                     View Code
-                  </a>
+                  </a>}
                 </div>
               </motion.div>
             ))}

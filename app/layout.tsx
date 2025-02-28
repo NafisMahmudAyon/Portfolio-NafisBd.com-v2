@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import { oswald } from './fonts'
 import './globals.css'
 import PageLoader from '@/components/PageLoader'
-import NavBar from '@/components/Header/NavBar'
+import {NavbarWrapper} from '@/components/NavbarWrapper'
 
 
 export const metadata: Metadata = {
@@ -23,9 +23,7 @@ export default function RootLayout({
       <body className={` ${oswald.className} bg-[#f1f6fb] dark:bg-[#262626] relative max-h-screen overflow-y-scroll`}>
         <PageLoader />
         <Cursor />
-        <div className='hidden lg:block max-w-[calc(1440px_-_10%)] w-full fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-10'>
-          <NavBar />
-        </div>
+        <NavbarWrapper />
         {children}
         <BackToTop className="p-2 border border-primaryColor bg-primaryColor bg-opacity-10
 text-primaryColor backdrop-blur-xl">

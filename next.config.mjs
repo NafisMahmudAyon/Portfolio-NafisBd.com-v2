@@ -19,6 +19,12 @@ const nextConfig = {
         hostname: 'blog-x-ui.vercel.app',
         port: '',
         pathname: '/**' // Correctly allow all paths under the hostname
+      },
+      {
+        protocol: 'https',
+        hostname: 'comboblocks.com',
+        port: '',
+        pathname: '/**' // Correctly allow all paths under the hostname
       }
     ]
   }

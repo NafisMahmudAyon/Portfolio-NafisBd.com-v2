@@ -173,7 +173,7 @@ input:-internal-autofill-selected {
 }
 
 body {
-  cursor: none;
+  /* cursor: none; */
 }
 html {
   scroll-behavior: smooth;
