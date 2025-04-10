@@ -83,7 +83,7 @@ const PageData = () => {
                     className='aspect-[3/2] grid-rows-subgrid w-full object-contain group-hover:scale-110 transition-transform duration-200 ease-in-out'
                   />
                 </div>
-                <a href={`/projects/${project.slug}`} className='absolute inset-0'></a>
+                <a href={project.redirect ? project.redirect_url : `/projects/${project.slug}`} className='absolute inset-0'></a>
                 <h4
                   className={`px-4 pt-4 text-lg grid-rows-subgrid font-bold text-headingText dark:text-headingDarkText h-max ${poppins.className}`}
                 >

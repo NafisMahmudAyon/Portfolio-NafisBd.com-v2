@@ -101,7 +101,7 @@ const ProjectsGrid: React.FC = () => {
       className={`px-4 pb-20 md:px-8 lg:px-16 ${poppins.className}`}
     >
       <div className='grid grid-cols-1 grid-rows-[repeat(5_,_auto)] gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-        {data.slice(0, 3).map(project => (
+        {data.slice(-3).map(project => (
           <motion.div
             key={project.id}
             variants={childVariants}
@@ -120,7 +120,7 @@ const ProjectsGrid: React.FC = () => {
                 className='aspect-[3/2] grid-rows-subgrid w-full object-cover group-hover:scale-110 transition-transform duration-200 ease-in-out'
               />
             </div>
-            <a href={`/projects/${project.slug}`} className='absolute inset-0'></a>
+            <a href={project.redirect ? project.redirect_url : `/projects/${project.slug}`} className='absolute inset-0'></a>
 
             <h4
               className={`px-4 pt-4 text-lg grid-rows-subgrid font-bold text-headingText dark:text-headingDarkText h-max ${poppins.className}`}
