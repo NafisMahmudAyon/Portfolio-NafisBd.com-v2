@@ -1,13 +1,11 @@
-import React from 'react'
+import { poppins } from '@/app/fonts'
+import Link from 'next/link'
 import {
   FacebookIcon,
   GithubIcon,
   LinkedInIcon,
-  TelegramIcon,
-  TwitterIcon,
   WhatsAppIcon
 } from '../Icons'
-import { poppins } from '@/app/fonts'
 
 const FooterMenu = () => {
   return (
@@ -20,23 +18,31 @@ const FooterMenu = () => {
       </div>
       <ul className='flex items-center gap-2'>
         <li>
-          <FacebookIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
+          <Link href="https://www.facebook.com/ayon.nafis.mahmud">
+            <FacebookIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
+          </Link>
         </li>
-        <li>
+        {/* <li>
           <TwitterIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
+        </li> */}
+        <li>
+          <Link href="https://www.linkedin.com/in/nafis-mahmud-ayon/">
+            <LinkedInIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
+          </Link>
         </li>
         <li>
-          <LinkedInIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
+          <Link href="https://github.com/NafisMahmudAyon">
+            <GithubIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
+          </Link>
         </li>
         <li>
-          <GithubIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
+          <Link href="https://wa.me/+8801733235762">
+            <WhatsAppIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
+          </Link>
         </li>
-        <li>
-          <WhatsAppIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
-        </li>
-        <li>
+        {/* <li>
           <TelegramIcon className='aspect-square w-5 text-headingText dark:text-headingDarkText' />
-        </li>
+        </li> */}
       </ul>
     </div>
   )

@@ -1,48 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nafis Mahmud Ayon - Portfolio
 
-## Getting Started
+Welcome to the GitHub repository for my personal portfolio website, showcasing my work as a Frontend Web Developer.
 
-First, run the development server:
+## About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I am a passionate Frontend Web Developer with 4 years of experience in building responsive and user-friendly websites. My expertise lies in crafting intuitive interfaces with a strong emphasis on UI/UX design. I enjoy turning complex problems into simple, beautiful, and engaging solutions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the
-result.
+## Skills
 
-You can start editing the page by modifying `app/page.tsx`. The page
-auto-updates as you edit the file.
+- **Frontend:** HTML, CSS, JavaScript (JS), TypeScript (TS), PHP, Tailwind CSS, React, Next.js
+- **Backend:** Node.js, Express.js, MySQL, PostgreSQL, MongoDB
+- **Others:** Git, GitHub, Netlify, Vercel, VS Code, Figma
 
-This project uses
-[`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to
-automatically optimize and load Inter, a custom Google Font.
+## Projects
 
-## Learn More
+Here are some of the notable projects I've worked on:
 
-To learn more about Next.js, take a look at the following resources:
+### [Landing Page UI](https://ui.nafisbd.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A React component library designed for creating visually appealing and responsive landing pages. The library emphasizes clean design, ease of use, and flexibility, allowing developers to create unique layouts that align with their branding and marketing goals.
 
-You can check out
-[the Next.js GitHub repository](https://github.com/vercel/next.js/) - your
-feedback and contributions are welcome!
+**Technologies:** React, NPM Package, UI Library
 
-## Deploy on Vercel
+### [Blog-X UI](https://blog-x-ui.vercel.app)
 
-The easiest way to deploy your Next.js app is to use the
-[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
+A React component library designed for creating modern, responsive, and customizable blog interfaces. The library offers a range of components to help developers build visually appealing and feature-rich blogs.
 
-Check out our
-[Next.js deployment documentation](https://nextjs.org/docs/deployment) for more
-details.
+**Technologies:** React, UI Library, Blog
+
+### [Aspect UI](https://www.npmjs.com/package/aspect-ui)
+
+A React component library that provides a collection of reusable UI components. The library offers a wide range of components, such as buttons, inputs, modals, and more, that can be used to build modern web applications quickly and efficiently.
+
+**Technologies:** React, UI Library, Image Carousel
+
+## Experience
+
+- **Frontend Web Developer at PickPlugins** (Dec 2022 - Present)
+  - Developing WordPress plugins using React, PHP, and JavaScript.
+  - Technologies: HTML, CSS, JS, PHP, React, WordPress, JSON API, Tailwind CSS.
+
+- **Full Stack Web Developer (Freelancer)** (Dec 2020 - Present)
+
+## Contact
+
+If you're interested in collaborating or have any questions, feel free to reach out:
+
+- **Phone:** +880 173 323 5762
+- **Email:** nafismahmudayon@gmail.com
+
+Let's build something amazing together!

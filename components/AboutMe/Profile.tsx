@@ -1,17 +1,15 @@
 'use client'
-import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 import ProfilePic from '../../public/profilePic.png'
+import HeadingSection from '../HeadingSection'
 import {
   FacebookIcon,
   GithubIcon,
   LinkedInIcon,
-  TelegramIcon,
-  TwitterIcon,
   WhatsAppIcon
 } from '../Icons'
-import HeadingSection from '../HeadingSection'
 
 const Profile = () => {
   const spring = {
@@ -47,30 +45,38 @@ const Profile = () => {
         animate={{ x: '-50%', opacity: 1 }}
         transition={{ ...spring, delay: 0.2 }}
         whileHover={{ scale: 1.05 }}
-        // whileTap={{ scale: 0.95 }}
+      // whileTap={{ scale: 0.95 }}
       >
         <span className='pb-1 text-headingText dark:text-headingDarkText'>
           Nafis Mahmud Ayon
         </span>
         <ul className='flex items-center gap-2'>
           <li>
-            <FacebookIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
+            <Link href="https://www.facebook.com/ayon.nafis.mahmud">
+              <FacebookIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
+            </Link>
           </li>
-          <li>
+          {/* <li>
             <TwitterIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
+          </li> */}
+          <li>
+            <Link href="https://www.linkedin.com/in/nafis-mahmud-ayon/">
+              <LinkedInIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
+            </Link>
           </li>
           <li>
-            <LinkedInIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
+            <Link href="https://github.com/NafisMahmudAyon">
+              <GithubIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
+            </Link>
           </li>
           <li>
-            <GithubIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
+            <Link href="https://wa.me/+8801733235762">
+              <WhatsAppIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
+            </Link>
           </li>
-          <li>
-            <WhatsAppIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
-          </li>
-          <li>
+          {/* <li>
             <TelegramIcon className='aspect-square w-6 text-headingText dark:text-headingDarkText' />
-          </li>
+          </li> */}
         </ul>
       </motion.div>
     </div>
