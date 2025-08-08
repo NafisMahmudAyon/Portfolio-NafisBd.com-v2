@@ -1,11 +1,11 @@
 import Cursor from '@/components/Cursor'
 import { ChevronUpIcon } from '@heroicons/react/24/solid'
-import { BackToTop } from 'aspect-ui/BackToTop'
 import type { Metadata } from 'next'
 import { oswald } from './fonts'
 import './globals.css'
 import PageLoader from '@/components/PageLoader'
 import {NavbarWrapper} from '@/components/NavbarWrapper'
+import { BackToTop } from '@/components/aspect-ui'
 
 
 export const metadata: Metadata = {

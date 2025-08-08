@@ -1,10 +1,9 @@
 'use client'
 import { poppins } from '@/app/fonts'
-import { Modal, ModalAction, ModalContent } from 'aspect-ui/Modal'
+import { Modal, ModalAction, ModalContent, useToast } from '@/components/aspect-ui'
 import { useState } from 'react'
 // import { ToastContainer, toast } from 'react-toastify'
 import { XMarkIcon } from '@heroicons/react/24/solid'
-import { useToast } from 'aspect-ui/Toast'
 // import 'react-toastify/dist/ReactToastify.css'
 import ContactForm from './ContactForm'
 
@@ -14,11 +13,11 @@ const CallToAction = () => {
 
   const handleOpen = (isModalOpen: boolean) => setIsOpen(isModalOpen)
 
-  const { addToast, ToastContainer } = useToast()
+  const { toast, ToastContainer } = useToast()
 
   const handleClick = (type: 'success' | 'error', message: string) => {
     setIsOpen(false)
-    addToast({
+    toast({
       className: "",
       message: message,
       messageClassName: "",
