@@ -1,4 +1,4 @@
-import { AspectUITheme } from 'aspect-ui/AspectUITheme'
+// import { AspectUITheme } from 'aspect-ui/AspectUITheme'
 
 // const colorsPalette = {
 //   ...colors,
@@ -27,4 +27,5 @@ const config = {
   },
   plugins: []
 }
-export default AspectUITheme(config)
+// export default AspectUITheme(config)
+export default config
